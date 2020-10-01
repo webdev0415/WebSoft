@@ -1,0 +1,20 @@
+{
+  "name": "Easy Drag and Drop Image Creator App",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "28",
+  "description": "Create images, banners, logos, icons, flyers, birthday invitations, facebook cover photos, etc... Also, resize images",
+  "offline_enabled": true,
+  "icons": {"128": "icon128.png",
+			"48": "icon48.png",
+			"16": "icon16.png"
+  },
+ "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },  
+  "permissions": [
+    "storage"
+  ]
+}

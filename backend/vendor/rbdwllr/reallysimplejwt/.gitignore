@@ -1,0 +1,11 @@
+Vagrantfile
+.vagrant/
+vendor/
+composer.lock
+build
+coverage/
+infection.log
+docker-compose.yml
+Dockerfile
+.phpunit.result.cache
+coverage.xml

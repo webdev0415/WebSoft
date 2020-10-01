@@ -1,0 +1,703 @@
+/* -----------------------------------------------  Floating button  -------------------------------------------------- */
+.float {
+  position: fixed;
+  width: 165px;
+  height: 35px;
+  bottom: 160px;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  right: -65px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.float4 {
+  position: fixed;
+  width: 165px;
+  height: 35px;
+  bottom: 160px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: -65px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.float2 {
+  position: fixed;
+  width: 165px;
+  height: 35px;
+  bottom: -5px;
+  right: 30px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.float3 {
+  position: fixed;
+  width: 165px;
+  height: 35px;
+  bottom: -5px;
+  left: 30px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.float_button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: .9;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+/* -----------------------------------------------  Modal box  -------------------------------------------------- */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  /* Modal Content */
+  /* The Close Button */
+  /* Add Animation */
+}
+
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 32% !important;
+  right: auto;
+  left: 68% !important;
+  float: right;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+.modal .modal-header h4 {
+  color: #0278F7;
+  font-size: 1.3rem;
+  padding-top: 3px;
+}
+
+.modal .close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .modal-header {
+  padding: 2px 16px;
+  padding-top: 18px;
+  color: white;
+}
+
+.modal .modal-button {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 18px !important;
+}
+
+.modal .modal-button:hover {
+  cursor: pointer;
+  background-color: #0278F7;
+  color: white !important;
+}
+
+.modal .modal-body {
+  padding: 2px 16px;
+  padding-top: 10px;
+  padding-bottom: 10px !important;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideIn2 {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* -----------------------------------------------  OTHER  -------------------------------------------------- */
+img {
+  width: 100vw;
+}
+
+.powered_by {
+  text-align: right;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.modal-button img {
+  width: 30px;
+  float: left;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: -3px !important;
+}
+
+h6 {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* --------------------------- COLOR TABBAR --------------------------*/
+.paintMenu .undo {
+  height: 31px;
+  width: 31px;
+  background: #EEEEEE;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding-top: 2px;
+  padding-left: 2px;
+  margin-top: 3.5px;
+}
+
+.paintMenu .palette {
+  width: 23px;
+  height: 23px;
+  float: left;
+  margin: 6px;
+}
+
+.paintMenu .shapes {
+  width: 23px;
+  height: 23px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.paintMenu .shapetriangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #1f1f1f;
+  display: inline-block;
+  background: white;
+}
+
+.paintMenu .button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  outline: 0;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.paintMenu input.vertical {
+  -webkit-appearance: slider-vertical;
+  -webkit-writing-mode: bt-lr;
+  -ms-writing-mode: bt-lr;
+  writing-mode: bt-lr;
+}
+
+.paintMenu input[type=range] {
+  width: 65%;
+  display: inline-block;
+}
+
+.paintMenu input[type=button] {
+  margin-bottom: 5px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 65px;
+  outline: 0;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.paintMenu input[type=range]::-webkit-slider-runnable-track {
+  margin-top: -10px;
+  margin-left: 15px;
+  width: 308px;
+  height: 3px;
+  background: #000;
+  border: none;
+}
+
+.paintMenu input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: slider-vertical;
+  height: 16px;
+  width: 16px;
+  border: 3px solid blue;
+  margin-top: -4px;
+}
+
+.paintMenu input[type=range]:focus {
+  outline: none;
+}
+
+.paintMenu input[type=range]:focus::-webkit-slider-runnable-track {
+  background: black;
+}
+
+.paintMenu .palette {
+  height: 30px;
+  display: inline;
+  float: left;
+  margin-left: 20px;
+}
+
+.paintMenu .palette:hover {
+  cursor: pointer;
+}
+
+.paintMenu .colorpicker-component {
+  width: 100px;
+  float: left;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.paintMenu .shaperectangle {
+  border: 2px solid black;
+  background: white;
+  height: 25px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.paintMenu .shapecircle {
+  width: 25px;
+  height: 25px;
+  border: 2px black solid;
+  border-radius: 100%;
+  display: inline-block;
+  background: white;
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 0px;
+}
+
+.paintMenu .menuImg {
+  width: 25px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.paintMenu .shapearrow {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: 0px;
+}
+
+.paintMenu .shapearrow img {
+  width: 35px;
+  padding-top: 1px;
+  margin-top: -8px;
+}
+
+.paintMenu .undo img {
+  -webkit-transform: rotate(-30deg) !important;
+  transform: rotate(-30deg) !important;
+  margin-top: 2px;
+  width: 22px;
+  margin-top: -5px;
+  margin-left: -3px;
+}
+
+.paintMenu .text img {
+  margin-top: 0px;
+  width: 28px;
+}
+
+.paintMenu .pencil:hover {
+  cursor: pointer;
+}
+
+.paintMenu .pencil img {
+  width: 38px;
+  margin-top: -5px;
+  margin-left: -4px;
+}
+
+.paintMenu div.text {
+  float: left;
+  display: inline;
+}
+
+.paintMenu .sizeOfText {
+  margin-top: 2px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+
+.paintMenu .menuSectionWrapper {
+  margin-left: 10px !important;
+  background: #EEEEEE;
+  border: solid 1px lightgrey;
+  border-radius: 3px;
+  display: inline;
+  float: left;
+  height: 31px;
+  margin-top: 3px;
+}
+
+.paintMenu .pencil {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+
+.paintMenu .drawWrapper {
+  width: 150px;
+}
+
+.paintMenu .innerCanvasWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.paintMenu .rectangle {
+  border: 1px solid #FF0000;
+  position: absolute;
+}
+
+.paintMenu .active {
+  background-color: darkgrey;
+  border-radius: 2px;
+}
+
+.paintMenu .text {
+  margin-left: 20px;
+}
+
+.paintMenu .menuItem {
+  height: 30px !important;
+  width: 30px !important;
+  float: left;
+  display: inline;
+  margin-left: 10px;
+}
+
+.paintMenu .arrow_container {
+  margin: 0 !important;
+}
+
+.paintMenu .shapesWrapper {
+  width: 176px;
+}
+
+.paintMenu .shapeItem1 {
+  margin-left: 8px !important;
+  margin: 0;
+}
+
+.paintMenu .shapeItem2 {
+  padding-left: 2.5px;
+}
+
+.paintMenu .menuItem:hover {
+  cursor: pointer;
+}
+
+.paintMenu .screenShotCanvas {
+  width: 100% !important;
+}
+
+.paintMenu .shapeline {
+  background-color: black;
+  margin: 0;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: 2.5px;
+  margin-left: 15px;
+}
+
+.paintMenu .colorText2 {
+  display: none !important;
+}
+
+.paintMenu .sizeOfText {
+  width: 50px !important;
+}
+
+.paintMenu .undo {
+  margin-top: 3.5px;
+}
+
+.paintMenu h4 {
+  font-size: 16px !important;
+}
+
+.paintMenu h5 {
+  font-size: 14px !important;
+}
+
+.paintMenu .action_text {
+  text-align: left;
+}
+
+.paintMenu .reportForm {
+  text-align: left;
+}
+
+.paintMenu {
+  padding-right: 12px !important;
+  border: 1px solid;
+  margin-top: 6px;
+  padding-top: 3px !important;
+}
+.modal2 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  /* The Close Button */
+}
+
+.modal2 .modal-content {
+  position: fixed;
+  bottom: auto;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn2;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn2;
+  animation-duration: 0.4s;
+  padding-bottom: 10px;
+  left: auto !important;
+  width: 100% !important;
+}
+
+.modal2 .modal-header h4 {
+  color: #0278F7;
+}
+
+.modal2 .close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal2 .close:hover,
+.modal2 .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal2 .modal-header {
+  padding: 2px 16px;
+  padding-top: 15px;
+  color: white;
+}
+
+.modal2 .modal-button {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 3px;
+  width: 50%;
+  margin: 3px;
+  float: left;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 18px !important;
+  padding: 10px !important;
+  height: 50px !important;
+}
+
+.modal2 .modal-button:hover {
+  cursor: pointer;
+  background-color: #0278F7;
+  color: white !important;
+}
+
+.modal2 .modal-body {
+  padding: 2px 16px;
+}
+
+.float2_button_container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.modal_feedback_wrapper {
+  display: none;
+}
+
+.colorText2_input_wrapper {
+  float: left;
+  padding-left: 12px !important;
+  padding-top: 1px;
+}
+
+#colorText2_choose:hover {
+  cursor: pointer;
+}
+
+.ready_wrapper {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.comment_field_top {
+  height: 146px !important;
+}
+
+.backlink_top_wrapper {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.top_feedback_wrapper {
+  padding-top: 14px;
+}
+
+.report_modal_text {
+  text-align: left;
+}
+/*# sourceMappingURL=index.css.map */

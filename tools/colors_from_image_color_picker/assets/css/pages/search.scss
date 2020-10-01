@@ -1,0 +1,12 @@
+@import '../_custom-variables/pages';
+
+$search-nav-border-color: rgba(0, 0, 0, .06) !default;
+
+.default-style .search-nav.nav {
+  border-bottom: 1px solid $search-nav-border-color !important;
+}
+
+.material-style .search-nav.nav {
+  border: none !important;
+  box-shadow: none;
+}

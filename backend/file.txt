@@ -1,0 +1,1 @@
+{"error":{"errors":[{"domain":"global","reason":"unsupportedOutputFormat","message":"Unsupported Output Format","locationType":"parameter","location":"alt"}],"code":400,"message":"Unsupported Output Format"}}

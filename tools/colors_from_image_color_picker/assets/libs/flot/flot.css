@@ -1,0 +1,26 @@
+.flot-overlay ~ .legend > * {
+  right: 0 !important;
+}
+
+.flot-overlay ~ .legend .legendColorBox {
+  padding-right: 5px;
+}
+
+.default-style .flotTip {
+  padding: 4px 10px !important;
+  border-color: #000 !important;
+  border-radius: 0.25rem !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  font-size: 11px !important;
+}
+
+.material-style .flotTip {
+  padding: 4px 10px !important;
+  border-color: rgba(24, 28, 33, 0.8) !important;
+  border-radius: 0.125rem !important;
+  background-color: rgba(24, 28, 33, 0.8) !important;
+  color: #fff !important;
+  font-size: 11px !important;
+}
+/*# sourceMappingURL=flot.css.map */

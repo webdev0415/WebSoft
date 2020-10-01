@@ -1,0 +1,1020 @@
+[22-Mar-2020 12:00:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/frontend/dist/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/frontend/dist/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/frontend/dist/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/frontend/dist/backend/controller/AppController.php(73): User->__construct()
+#3 /var/www/html/frontend/dist/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/frontend/dist/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/frontend/dist/backend/service/Database.php on line 7
+[22-Mar-2020 12:03:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/frontend/dist/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/frontend/dist/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/frontend/dist/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/frontend/dist/backend/controller/AppController.php(73): User->__construct()
+#3 /var/www/html/frontend/dist/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/frontend/dist/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/frontend/dist/backend/service/Database.php on line 7
+[22-Mar-2020 12:03:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/frontend/dist/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/frontend/dist/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/frontend/dist/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/frontend/dist/backend/controller/AppController.php(73): User->__construct()
+#3 /var/www/html/frontend/dist/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/frontend/dist/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/frontend/dist/backend/service/Database.php on line 7
+[22-Mar-2020 15:51:58 UTC] van ilyen
+[22-Mar-2020 15:52:08 UTC] van ilyen
+[22-Mar-2020 15:52:13 UTC] van ilyen
+[22-Mar-2020 15:52:15 UTC] van ilyen
+[22-Mar-2020 15:52:35 UTC] van ilyen
+[22-Mar-2020 15:52:36 UTC] van ilyen
+[22-Mar-2020 15:52:37 UTC] van ilyen
+[22-Mar-2020 15:52:37 UTC] van ilyen
+[22-Mar-2020 15:53:22 UTC] van ilyen
+[22-Mar-2020 15:53:54 UTC] van ilyen
+[22-Mar-2020 15:54:06 UTC] van ilyen
+[22-Mar-2020 16:01:06 UTC] van ilyen
+[22-Mar-2020 16:01:09 UTC] van ilyen
+[22-Mar-2020 16:01:25 UTC] van ilyen
+[22-Mar-2020 16:01:28 UTC] van ilyen
+[22-Mar-2020 16:01:42 UTC] van ilyen
+[22-Mar-2020 16:46:49 UTC] van ilyen
+[22-Mar-2020 16:47:14 UTC] van ilyen
+[22-Mar-2020 16:47:29 UTC] van ilyen
+[22-Mar-2020 20:58:35 UTC] van ilyen
+[22-Mar-2020 22:21:14 UTC] van ilyen
+[22-Mar-2020 23:37:28 UTC] van ilyen
+[22-Mar-2020 23:38:00 UTC] van ilyen
+[22-Mar-2020 23:38:37 UTC] van ilyen
+[23-Mar-2020 08:33:19 UTC] van ilyen
+[23-Mar-2020 09:40:35 UTC] van ilyen
+[23-Mar-2020 11:37:46 UTC] van ilyen
+[23-Mar-2020 11:38:01 UTC] van ilyen
+[23-Mar-2020 12:13:10 UTC] van ilyen
+[23-Mar-2020 12:25:23 UTC] van ilyen
+[23-Mar-2020 13:50:41 UTC] van ilyen
+[24-Mar-2020 07:38:48 UTC] ewhy2
+[24-Mar-2020 07:38:48 UTC] ewhy2
+[24-Mar-2020 07:38:51 UTC] ewhy2
+[24-Mar-2020 07:38:51 UTC] ewhy2
+[24-Mar-2020 07:38:55 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[24-Mar-2020 07:39:01 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[24-Mar-2020 07:39:40 UTC] ewhy2
+[24-Mar-2020 07:39:40 UTC] ewhy2
+[24-Mar-2020 07:39:44 UTC] ewhy2
+[24-Mar-2020 07:39:44 UTC] ewhy2
+[24-Mar-2020 07:39:51 UTC] ewhy2
+[24-Mar-2020 07:39:51 UTC] ewhy2
+[24-Mar-2020 07:39:59 UTC] ewhy2
+[24-Mar-2020 07:39:59 UTC] ewhy2
+[24-Mar-2020 07:40:01 UTC] ewhy2
+[24-Mar-2020 07:40:01 UTC] ewhy2
+[24-Mar-2020 07:40:05 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[24-Mar-2020 07:40:08 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[24-Mar-2020 07:40:09 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[24-Mar-2020 08:54:01 UTC] ewhy2
+[24-Mar-2020 08:54:01 UTC] ewhy2
+[24-Mar-2020 08:54:06 UTC] ewhy2
+[24-Mar-2020 08:54:07 UTC] ewhy2
+[24-Mar-2020 08:54:09 UTC] ewhy2
+[24-Mar-2020 08:54:09 UTC] ewhy2
+[24-Mar-2020 08:57:03 UTC] ewhy2
+[24-Mar-2020 08:57:03 UTC] ewhy2
+[24-Mar-2020 08:57:06 UTC] ewhy2
+[24-Mar-2020 08:57:06 UTC] ewhy2
+[24-Mar-2020 08:57:08 UTC] ewhy2
+[24-Mar-2020 08:57:08 UTC] ewhy2
+[24-Mar-2020 08:57:11 UTC] ewhy2
+[24-Mar-2020 08:57:11 UTC] ewhy2
+[25-Mar-2020 08:23:21 UTC] ewhy2
+[25-Mar-2020 08:23:22 UTC] ewhy2
+[25-Mar-2020 09:30:27 UTC] ewhy2
+[25-Mar-2020 09:30:27 UTC] ewhy2
+[25-Mar-2020 13:04:50 UTC] ewhy2
+[25-Mar-2020 13:04:50 UTC] ewhy2
+[25-Mar-2020 15:12:23 UTC] ewhy2
+[25-Mar-2020 15:12:23 UTC] ewhy2
+[25-Mar-2020 15:12:29 UTC] ewhy2
+[25-Mar-2020 15:12:29 UTC] ewhy2
+[25-Mar-2020 15:12:32 UTC] ewhy2
+[25-Mar-2020 15:12:32 UTC] ewhy2
+[25-Mar-2020 15:12:34 UTC] ewhy2
+[25-Mar-2020 15:12:34 UTC] ewhy2
+[25-Mar-2020 15:12:39 UTC] ewhy2
+[25-Mar-2020 15:12:39 UTC] ewhy2
+[25-Mar-2020 15:12:41 UTC] ewhy2
+[25-Mar-2020 15:12:41 UTC] ewhy2
+[25-Mar-2020 15:12:43 UTC] ewhy2
+[25-Mar-2020 15:12:43 UTC] ewhy2
+[25-Mar-2020 15:12:45 UTC] ewhy2
+[25-Mar-2020 15:12:45 UTC] ewhy2
+[25-Mar-2020 15:12:50 UTC] ewhy2
+[25-Mar-2020 15:12:50 UTC] ewhy2
+[25-Mar-2020 15:13:14 UTC] ewhy2
+[25-Mar-2020 15:13:14 UTC] ewhy2
+[25-Mar-2020 15:14:08 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[25-Mar-2020 15:14:13 UTC] ewhy2
+[25-Mar-2020 15:14:13 UTC] ewhy2
+[25-Mar-2020 15:14:15 UTC] ewhy2
+[25-Mar-2020 15:14:15 UTC] ewhy2
+[25-Mar-2020 15:14:20 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[25-Mar-2020 15:14:24 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[25-Mar-2020 15:15:01 UTC] ewhy2
+[25-Mar-2020 15:15:01 UTC] ewhy2
+[25-Mar-2020 15:17:27 UTC] ewhy2
+[25-Mar-2020 15:17:27 UTC] ewhy2
+[25-Mar-2020 15:49:35 UTC] ewhy2
+[25-Mar-2020 15:49:35 UTC] ewhy2
+[25-Mar-2020 15:49:43 UTC] ewhy2
+[25-Mar-2020 15:49:43 UTC] ewhy2
+[25-Mar-2020 17:01:56 UTC] ewhy2
+[25-Mar-2020 17:01:56 UTC] ewhy2
+[25-Mar-2020 17:02:01 UTC] ewhy2
+[25-Mar-2020 17:02:01 UTC] ewhy2
+[25-Mar-2020 17:02:03 UTC] ewhy2
+[25-Mar-2020 17:02:03 UTC] ewhy2
+[25-Mar-2020 17:02:04 UTC] ewhy2
+[25-Mar-2020 17:02:04 UTC] ewhy2
+[25-Mar-2020 17:02:05 UTC] ewhy2
+[25-Mar-2020 17:02:05 UTC] ewhy2
+[25-Mar-2020 17:02:06 UTC] ewhy2
+[25-Mar-2020 17:02:06 UTC] ewhy2
+[25-Mar-2020 17:02:07 UTC] ewhy2
+[25-Mar-2020 17:02:07 UTC] ewhy2
+[25-Mar-2020 17:02:08 UTC] ewhy2
+[25-Mar-2020 17:02:08 UTC] ewhy2
+[25-Mar-2020 17:02:09 UTC] ewhy2
+[25-Mar-2020 17:02:09 UTC] ewhy2
+[25-Mar-2020 17:02:12 UTC] ewhy2
+[25-Mar-2020 17:02:12 UTC] ewhy2
+[25-Mar-2020 17:02:13 UTC] ewhy2
+[25-Mar-2020 17:02:13 UTC] ewhy2
+[25-Mar-2020 17:02:14 UTC] ewhy2
+[25-Mar-2020 17:02:14 UTC] ewhy2
+[25-Mar-2020 17:02:15 UTC] ewhy2
+[25-Mar-2020 17:02:15 UTC] ewhy2
+[25-Mar-2020 17:02:19 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[25-Mar-2020 17:02:20 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[25-Mar-2020 17:02:23 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 123
+[25-Mar-2020 17:02:25 UTC] ewhy2
+[25-Mar-2020 17:02:25 UTC] ewhy2
+[25-Mar-2020 17:26:26 UTC] ewhy2
+[25-Mar-2020 17:26:26 UTC] ewhy2
+[25-Mar-2020 17:43:00 UTC] ewhy2
+[25-Mar-2020 17:43:00 UTC] ewhy2
+[25-Mar-2020 17:43:17 UTC] ewhy2
+[25-Mar-2020 17:43:17 UTC] ewhy2
+[25-Mar-2020 20:29:11 UTC] ewhy2
+[25-Mar-2020 20:29:11 UTC] ewhy2
+[25-Mar-2020 21:15:50 UTC] ewhy2
+[25-Mar-2020 21:15:50 UTC] ewhy2
+[25-Mar-2020 21:16:01 UTC] ewhy2
+[25-Mar-2020 21:16:01 UTC] ewhy2
+[25-Mar-2020 21:17:34 UTC] ewhy2
+[25-Mar-2020 21:17:34 UTC] ewhy2
+[25-Mar-2020 21:19:40 UTC] ewhy2
+[25-Mar-2020 21:19:40 UTC] ewhy2
+[25-Mar-2020 21:39:42 UTC] ewhy2
+[25-Mar-2020 21:39:42 UTC] ewhy2
+[25-Mar-2020 21:39:44 UTC] ewhy2
+[25-Mar-2020 21:39:44 UTC] ewhy2
+[25-Mar-2020 21:39:45 UTC] ewhy2
+[25-Mar-2020 21:39:45 UTC] ewhy2
+[25-Mar-2020 21:39:49 UTC] ewhy2
+[25-Mar-2020 21:39:49 UTC] ewhy2
+[25-Mar-2020 21:39:52 UTC] ewhy2
+[25-Mar-2020 21:39:52 UTC] ewhy2
+[25-Mar-2020 22:34:24 UTC] ewhy2
+[25-Mar-2020 22:34:24 UTC] ewhy2
+[25-Mar-2020 22:34:49 UTC] ewhy2
+[25-Mar-2020 22:34:49 UTC] ewhy2
+[26-Mar-2020 09:08:56 UTC] ewhy2
+[26-Mar-2020 09:08:56 UTC] ewhy2
+[26-Mar-2020 11:58:38 UTC] ewhy2
+[26-Mar-2020 11:58:38 UTC] ewhy2
+[26-Mar-2020 12:56:17 UTC] ewhy2
+[26-Mar-2020 12:56:17 UTC] ewhy2
+[26-Mar-2020 12:56:45 UTC] ewhy2
+[26-Mar-2020 12:56:45 UTC] ewhy2
+[26-Mar-2020 12:57:03 UTC] ewhy2
+[26-Mar-2020 12:57:03 UTC] ewhy2
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:03 UTC] PHP Notice:  Undefined index: active in /var/www/html/frontend/dist/backend/models/User.php on line 164
+[26-Mar-2020 12:57:28 UTC] ewhy2
+[26-Mar-2020 12:57:28 UTC] ewhy2
+[26-Mar-2020 12:58:31 UTC] ewhy2
+[26-Mar-2020 12:58:31 UTC] ewhy2
+[26-Mar-2020 13:02:09 UTC] ewhy2
+[26-Mar-2020 13:02:09 UTC] ewhy2
+[26-Mar-2020 13:06:04 UTC] ewhy2
+[26-Mar-2020 13:06:04 UTC] ewhy2
+[26-Mar-2020 13:08:02 UTC] ewhy2
+[26-Mar-2020 13:08:02 UTC] ewhy2
+[26-Mar-2020 13:14:50 UTC] ewhy2
+[26-Mar-2020 13:14:50 UTC] ewhy2
+[26-Mar-2020 13:14:57 UTC] ewhy2
+[26-Mar-2020 13:14:57 UTC] ewhy2
+[26-Mar-2020 13:15:00 UTC] ewhy2
+[26-Mar-2020 13:15:00 UTC] ewhy2
+[26-Mar-2020 13:25:10 UTC] ewhy2
+[26-Mar-2020 13:25:10 UTC] ewhy2
+[26-Mar-2020 13:30:02 UTC] ewhy2
+[26-Mar-2020 13:30:02 UTC] ewhy2
+[26-Mar-2020 13:30:27 UTC] ewhy2
+[26-Mar-2020 13:30:27 UTC] ewhy2
+[26-Mar-2020 13:31:11 UTC] ewhy2
+[26-Mar-2020 13:31:11 UTC] ewhy2
+[26-Mar-2020 13:39:36 UTC] ewhy2
+[26-Mar-2020 13:39:36 UTC] ewhy2
+[26-Mar-2020 13:40:38 UTC] ewhy2
+[26-Mar-2020 13:40:38 UTC] ewhy2
+[26-Mar-2020 13:42:08 UTC] ewhy2
+[26-Mar-2020 13:42:08 UTC] ewhy2
+[26-Mar-2020 13:42:08 UTC] ewhy2
+[26-Mar-2020 13:42:47 UTC] ewhy2
+[26-Mar-2020 13:42:47 UTC] ewhy2
+[26-Mar-2020 13:42:47 UTC] ewhy2
+[26-Mar-2020 13:43:15 UTC] ewhy2
+[26-Mar-2020 13:43:15 UTC] ewhy2
+[26-Mar-2020 13:43:15 UTC] ewhy2
+[26-Mar-2020 13:43:28 UTC] ewhy2
+[26-Mar-2020 13:43:28 UTC] ewhy2
+[26-Mar-2020 13:43:28 UTC] ewhy2
+[26-Mar-2020 13:49:26 UTC] ewhy2
+[26-Mar-2020 13:49:26 UTC] ewhy2
+[26-Mar-2020 13:49:33 UTC] ewhy2
+[26-Mar-2020 13:49:33 UTC] ewhy2
+[26-Mar-2020 13:51:37 UTC] ewhy2
+[26-Mar-2020 13:51:37 UTC] ewhy2
+[26-Mar-2020 13:51:55 UTC] ewhy2
+[26-Mar-2020 13:51:55 UTC] ewhy2
+[26-Mar-2020 13:51:59 UTC] ewhy2
+[26-Mar-2020 13:51:59 UTC] ewhy2
+[26-Mar-2020 14:17:43 UTC] ewhy2
+[26-Mar-2020 14:17:43 UTC] ewhy2
+[26-Mar-2020 14:17:45 UTC] ewhy2
+[26-Mar-2020 14:17:45 UTC] ewhy2
+[26-Mar-2020 14:22:23 UTC] ewhy2
+[26-Mar-2020 14:22:23 UTC] ewhy2
+[26-Mar-2020 14:22:24 UTC] ewhy2
+[26-Mar-2020 14:22:24 UTC] ewhy2
+[26-Mar-2020 14:22:41 UTC] ewhy2
+[26-Mar-2020 14:22:41 UTC] ewhy2
+[26-Mar-2020 15:05:47 UTC] ewhy2
+[26-Mar-2020 15:05:47 UTC] ewhy2
+[26-Mar-2020 20:05:21 UTC] ewhy2
+[26-Mar-2020 20:05:21 UTC] ewhy2
+[26-Mar-2020 20:05:24 UTC] ewhy2
+[26-Mar-2020 20:05:24 UTC] ewhy2
+[26-Mar-2020 20:21:16 UTC] ewhy2
+[26-Mar-2020 20:21:16 UTC] ewhy2
+[26-Mar-2020 20:50:02 UTC] ewhy2
+[26-Mar-2020 20:50:03 UTC] ewhy2
+[26-Mar-2020 22:54:41 UTC] ewhy2
+[26-Mar-2020 22:54:41 UTC] ewhy2
+[27-Mar-2020 01:57:46 UTC] ewhy2
+[27-Mar-2020 01:57:46 UTC] ewhy2
+[27-Mar-2020 10:51:13 UTC] ewhy2
+[27-Mar-2020 10:51:13 UTC] ewhy2
+[27-Mar-2020 11:21:51 UTC] ewhy2
+[27-Mar-2020 11:21:51 UTC] ewhy2
+[27-Mar-2020 11:21:57 UTC] ewhy2
+[27-Mar-2020 11:21:57 UTC] ewhy2
+[27-Mar-2020 11:22:02 UTC] ewhy2
+[27-Mar-2020 11:22:02 UTC] ewhy2
+[27-Mar-2020 11:22:08 UTC] ewhy2
+[27-Mar-2020 11:22:08 UTC] ewhy2
+[27-Mar-2020 12:02:23 UTC] ewhy2
+[27-Mar-2020 12:02:23 UTC] ewhy2
+[27-Mar-2020 12:02:25 UTC] ewhy2
+[27-Mar-2020 12:02:25 UTC] ewhy2
+[27-Mar-2020 12:21:51 UTC] ewhy2
+[27-Mar-2020 12:21:51 UTC] ewhy2
+[27-Mar-2020 13:09:39 UTC] ewhy2
+[27-Mar-2020 13:09:39 UTC] ewhy2
+[27-Mar-2020 13:43:16 UTC] ewhy2
+[27-Mar-2020 13:43:16 UTC] ewhy2
+[27-Mar-2020 14:24:02 UTC] ewhy2
+[27-Mar-2020 14:24:02 UTC] ewhy2
+[27-Mar-2020 14:47:14 UTC] ewhy2
+[27-Mar-2020 14:47:14 UTC] ewhy2
+[27-Mar-2020 15:03:29 UTC] ewhy2
+[27-Mar-2020 15:03:29 UTC] ewhy2
+[27-Mar-2020 16:18:45 UTC] ewhy2
+[27-Mar-2020 16:18:45 UTC] ewhy2
+[27-Mar-2020 16:18:54 UTC] ewhy2
+[27-Mar-2020 16:18:54 UTC] ewhy2
+[27-Mar-2020 16:19:03 UTC] ewhy2
+[27-Mar-2020 16:19:03 UTC] ewhy2
+[27-Mar-2020 16:19:05 UTC] ewhy2
+[27-Mar-2020 16:19:05 UTC] ewhy2
+[27-Mar-2020 16:19:10 UTC] ewhy2
+[27-Mar-2020 16:19:10 UTC] ewhy2
+[27-Mar-2020 18:21:01 UTC] ewhy2
+[27-Mar-2020 18:21:01 UTC] ewhy2
+[27-Mar-2020 18:46:59 UTC] ewhy2
+[27-Mar-2020 18:46:59 UTC] ewhy2
+[27-Mar-2020 19:52:35 UTC] ewhy2
+[27-Mar-2020 19:52:35 UTC] ewhy2
+[27-Mar-2020 19:58:31 UTC] ewhy2
+[27-Mar-2020 19:58:31 UTC] ewhy2
+[27-Mar-2020 20:11:34 UTC] ewhy2
+[27-Mar-2020 20:11:34 UTC] ewhy2
+[27-Mar-2020 21:20:36 UTC] ewhy2
+[27-Mar-2020 21:20:36 UTC] ewhy2
+[27-Mar-2020 22:52:10 UTC] ewhy2
+[27-Mar-2020 22:52:10 UTC] ewhy2
+[27-Mar-2020 22:52:14 UTC] ewhy2
+[27-Mar-2020 22:52:14 UTC] ewhy2
+[28-Mar-2020 07:38:14 UTC] ewhy2
+[28-Mar-2020 07:38:14 UTC] ewhy2
+[28-Mar-2020 08:23:20 UTC] ewhy2
+[28-Mar-2020 08:23:21 UTC] ewhy2
+[28-Mar-2020 09:43:23 UTC] ewhy2
+[28-Mar-2020 09:43:23 UTC] ewhy2
+[28-Mar-2020 09:43:24 UTC] ewhy2
+[28-Mar-2020 09:43:24 UTC] ewhy2
+[28-Mar-2020 09:43:45 UTC] ewhy2
+[28-Mar-2020 09:43:45 UTC] ewhy2
+[28-Mar-2020 09:43:52 UTC] ewhy2
+[28-Mar-2020 09:43:52 UTC] ewhy2
+[28-Mar-2020 09:43:54 UTC] ewhy2
+[28-Mar-2020 09:43:54 UTC] ewhy2
+[28-Mar-2020 09:43:54 UTC] ewhy2
+[28-Mar-2020 09:43:54 UTC] ewhy2
+[28-Mar-2020 11:43:35 UTC] ewhy2
+[28-Mar-2020 11:43:35 UTC] ewhy2
+[28-Mar-2020 11:43:42 UTC] ewhy2
+[28-Mar-2020 11:43:42 UTC] ewhy2
+[28-Mar-2020 11:43:45 UTC] ewhy2
+[28-Mar-2020 11:43:45 UTC] ewhy2
+[28-Mar-2020 12:27:02 UTC] ewhy2
+[28-Mar-2020 12:27:02 UTC] ewhy2
+[28-Mar-2020 12:27:08 UTC] ewhy2
+[28-Mar-2020 12:27:08 UTC] ewhy2
+[28-Mar-2020 12:47:08 UTC] ewhy2
+[28-Mar-2020 12:47:08 UTC] ewhy2
+[28-Mar-2020 12:47:11 UTC] ewhy2
+[28-Mar-2020 12:47:11 UTC] ewhy2
+[28-Mar-2020 12:47:12 UTC] ewhy2
+[28-Mar-2020 12:47:12 UTC] ewhy2
+[28-Mar-2020 12:47:13 UTC] ewhy2
+[28-Mar-2020 12:47:13 UTC] ewhy2
+[28-Mar-2020 12:47:13 UTC] ewhy2
+[28-Mar-2020 12:47:13 UTC] ewhy2
+[28-Mar-2020 12:47:14 UTC] ewhy2
+[28-Mar-2020 12:47:14 UTC] ewhy2
+[28-Mar-2020 12:47:14 UTC] ewhy2
+[28-Mar-2020 12:47:14 UTC] ewhy2
+[28-Mar-2020 12:47:15 UTC] ewhy2
+[28-Mar-2020 12:47:15 UTC] ewhy2
+[28-Mar-2020 12:47:16 UTC] ewhy2
+[28-Mar-2020 12:47:16 UTC] ewhy2
+[28-Mar-2020 12:47:16 UTC] ewhy2
+[28-Mar-2020 12:47:16 UTC] ewhy2
+[28-Mar-2020 12:47:19 UTC] ewhy2
+[28-Mar-2020 12:47:19 UTC] ewhy2
+[28-Mar-2020 12:51:00 UTC] ewhy2
+[28-Mar-2020 12:51:00 UTC] ewhy2
+[28-Mar-2020 12:51:06 UTC] ewhy2
+[28-Mar-2020 12:51:06 UTC] ewhy2
+[28-Mar-2020 13:07:54 UTC] ewhy2
+[28-Mar-2020 13:07:54 UTC] ewhy2
+[28-Mar-2020 13:08:02 UTC] ewhy2
+[28-Mar-2020 13:08:02 UTC] ewhy2
+[28-Mar-2020 13:09:16 UTC] ewhy2
+[28-Mar-2020 13:09:16 UTC] ewhy2
+[28-Mar-2020 13:18:48 UTC] ewhy2
+[28-Mar-2020 13:18:48 UTC] ewhy2
+[28-Mar-2020 13:38:39 UTC] ewhy2
+[28-Mar-2020 13:38:39 UTC] ewhy2
+[28-Mar-2020 13:38:50 UTC] ewhy2
+[28-Mar-2020 13:38:50 UTC] ewhy2
+[28-Mar-2020 13:38:52 UTC] ewhy2
+[28-Mar-2020 13:38:52 UTC] ewhy2
+[28-Mar-2020 13:38:55 UTC] ewhy2
+[28-Mar-2020 13:38:55 UTC] ewhy2
+[28-Mar-2020 13:38:57 UTC] ewhy2
+[28-Mar-2020 13:38:57 UTC] ewhy2
+[28-Mar-2020 13:38:59 UTC] ewhy2
+[28-Mar-2020 13:38:59 UTC] ewhy2
+[28-Mar-2020 13:39:40 UTC] ewhy2
+[28-Mar-2020 13:39:40 UTC] ewhy2
+[28-Mar-2020 13:39:44 UTC] ewhy2
+[28-Mar-2020 13:39:44 UTC] ewhy2
+[28-Mar-2020 13:39:46 UTC] ewhy2
+[28-Mar-2020 13:39:46 UTC] ewhy2
+[28-Mar-2020 13:39:59 UTC] ewhy2
+[28-Mar-2020 13:39:59 UTC] ewhy2
+[28-Mar-2020 14:23:02 UTC] ewhy2
+[28-Mar-2020 14:23:02 UTC] ewhy2
+[28-Mar-2020 14:23:15 UTC] ewhy2
+[28-Mar-2020 14:23:15 UTC] ewhy2
+[28-Mar-2020 14:23:44 UTC] ewhy2
+[28-Mar-2020 14:23:44 UTC] ewhy2
+[28-Mar-2020 14:23:44 UTC] ewhy2
+[28-Mar-2020 14:44:04 UTC] ewhy2
+[28-Mar-2020 14:44:04 UTC] ewhy2
+[28-Mar-2020 14:44:19 UTC] ewhy2
+[28-Mar-2020 14:44:19 UTC] ewhy2
+[28-Mar-2020 14:44:25 UTC] ewhy2
+[28-Mar-2020 14:44:25 UTC] ewhy2
+[30-Mar-2020 20:21:35 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function User::sendActivationEmail(), 0 passed in /var/www/html/backend/models/User.php on line 94 and exactly 1 expected in /var/www/html/backend/models/User.php:385
+Stack trace:
+#0 /var/www/html/backend/models/User.php(94): User->sendActivationEmail()
+#1 /var/www/html/backend/controller/AppController.php(39): User->createUser(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 385
+[30-Mar-2020 20:22:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function User::sendActivationEmail(), 0 passed in /var/www/html/backend/models/User.php on line 94 and exactly 1 expected in /var/www/html/backend/models/User.php:385
+Stack trace:
+#0 /var/www/html/backend/models/User.php(94): User->sendActivationEmail()
+#1 /var/www/html/backend/controller/AppController.php(39): User->createUser(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 385
+[30-Mar-2020 20:22:45 UTC] tothmatee97@gmail.com
+[30-Mar-2020 20:22:45 UTC] Mate
+[30-Mar-2020 20:26:44 UTC] kingaat2015@gmail.com
+[30-Mar-2020 20:26:44 UTC] Kinga
+[30-Mar-2020 20:29:47 UTC] kingaat2015@gmail.com
+[30-Mar-2020 20:29:47 UTC] Kinga
+[31-Mar-2020 12:45:04 UTC] heyeske
+[31-Mar-2020 12:46:25 UTC] heyeske
+[31-Mar-2020 12:52:40 UTC] tothmatee97@gmail.com
+[31-Mar-2020 12:52:40 UTC] Mate
+[31-Mar-2020 12:54:48 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:50 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:51 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:52 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:52 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:54 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:55 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:56 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:54:58 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:55:01 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:56:08 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 12:56:09 UTC] PHP Notice:  Undefined index: admin in /var/www/html/admin.php on line 3
+[31-Mar-2020 14:25:44 UTC] PHP Notice:  Undefined index: admin in /var/www/html/profile_admin.php on line 3
+[31-Mar-2020 23:24:25 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[31-Mar-2020 23:27:36 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[01-Apr-2020 07:38:18 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[01-Apr-2020 07:38:19 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[01-Apr-2020 21:02:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:02:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:03:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:03:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:03:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:03:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:03:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[01-Apr-2020 21:03:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/backend/service/Database.php:7
+Stack trace:
+#0 /var/www/html/backend/service/Database.php(7): PDO->__construct('mysql:host=loca...', 'root', 'campus09')
+#1 /var/www/html/backend/models/User.php(10): Database->__construct('localhost', 'mydb', 'root', 'campus09')
+#2 /var/www/html/backend/controller/AppController.php(234): User->__construct()
+#3 /var/www/html/backend/controller/AppController.php(28): AppController->createInstallation('user')
+#4 /var/www/html/backend/index.php(6): AppController->route()
+#5 {main}
+  thrown in /var/www/html/backend/service/Database.php on line 7
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[02-Apr-2020 13:46:28 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/backend/models/User.php on line 188
+[03-Apr-2020 10:32:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:897
+Stack trace:
+#0 /var/www/html/backend/models/User.php(870): User->generateToolImage('iVBORw0KGgoAAAA...', 'ad972f10e0800b4...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 897
+[03-Apr-2020 10:43:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:830
+Stack trace:
+#0 /var/www/html/backend/models/User.php(805): User->generateProfileImage('iVBORw0KGgoAAAA...', '8d5e957f2978934...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 830
+[03-Apr-2020 10:44:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:830
+Stack trace:
+#0 /var/www/html/backend/models/User.php(805): User->generateProfileImage('iVBORw0KGgoAAAA...', '470e7a4f017a547...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 830
+[03-Apr-2020 10:44:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:830
+Stack trace:
+#0 /var/www/html/backend/models/User.php(805): User->generateProfileImage('iVBORw0KGgoAAAA...', '0777d5c17d4066b...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 830
+[03-Apr-2020 12:28:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:897
+Stack trace:
+#0 /var/www/html/backend/models/User.php(870): User->generateToolImage('iVBORw0KGgoAAAA...', '149e9677a5989fd...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 897
+[03-Apr-2020 17:02:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:830
+Stack trace:
+#0 /var/www/html/backend/models/User.php(805): User->generateProfileImage('iVBORw0KGgoAAAA...', 'eaae339c4d89fc1...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 830
+[03-Apr-2020 17:47:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '4c5bde74a8f1106...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:47:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'ab88b15733f5431...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:48:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '07563a3fe3bbe7e...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:52:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '43feaeeecd7b2fe...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:52:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'fc221309746013a...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:53:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '3fe94a002317b5f...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:54:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '74db120f0a8e564...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 17:55:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:833
+Stack trace:
+#0 /var/www/html/backend/models/User.php(808): User->generateProfileImage('iVBORw0KGgoAAAA...', '02e74f10e0327ad...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 833
+[03-Apr-2020 17:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'b4a528955b84f58...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:01:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:833
+Stack trace:
+#0 /var/www/html/backend/models/User.php(808): User->generateProfileImage('iVBORw0KGgoAAAA...', 'd9fc5b73a8d78fa...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 833
+[03-Apr-2020 18:02:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '430c3626b879b40...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:04:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'ad61ab143223efb...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:04:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '1ce927f87586409...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:04:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '8d3bba7425e7c98...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:04:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '7f6ffaa6bb0b408...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:04:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '9b8619251a19057...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:04:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'a5bfc9e07964f8d...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:07:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:833
+Stack trace:
+#0 /var/www/html/backend/models/User.php(808): User->generateProfileImage('iVBORw0KGgoAAAA...', 'e5841df2166dd42...')
+#1 /var/www/html/backend/controller/AppController.php(243): User->uploadProfileImage(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 833
+[03-Apr-2020 18:11:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '9fe8593a8a33060...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:11:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'a8849b052492b51...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:11:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'bc6dc48b743dc5d...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:11:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', '335f5352088d7d9...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:11:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imageCreateFromString() in /var/www/html/backend/models/User.php:900
+Stack trace:
+#0 /var/www/html/backend/models/User.php(873): User->generateToolImage('iVBORw0KGgoAAAA...', 'b86e8d03fe992d1...')
+#1 /var/www/html/backend/controller/AppController.php(257): User->uploadToolData(Object(stdClass))
+#2 /var/www/html/backend/index.php(6): AppController->route()
+#3 {main}
+  thrown in /var/www/html/backend/models/User.php on line 900
+[03-Apr-2020 18:13:54 UTC] PHP Warning:  Module 'gd' already loaded in Unknown on line 0
+[03-Apr-2020 20:11:40 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[03-Apr-2020 20:11:50 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[03-Apr-2020 20:12:32 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/ask.php on line 4
+[03-Apr-2020 20:44:27 UTC] PHP Notice:  Undefined index: suspended in /var/www/html/index.php on line 4
+[07-Apr-2020 19:29:33 UTC] PHP Notice:  Undefined index: logged_in in /var/www/html/settings.php on line 3
+[08-Apr-2020 10:16:24 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/admin_upload.php on line 3
+[08-Apr-2020 10:16:31 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/admin_upload.php on line 3
+[08-Apr-2020 11:56:05 UTC] PHP Notice:  Undefined index: logged_in in /var/www/html/settings.php on line 3
+[08-Apr-2020 12:54:19 UTC] executed
+[08-Apr-2020 12:55:15 UTC] executed
+[08-Apr-2020 15:04:09 UTC] tothmatee97@gmail.com
+[08-Apr-2020 15:04:09 UTC] Kinga Kovacs
+[08-Apr-2020 15:04:09 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:04:09 UTC] I have question
+[08-Apr-2020 15:05:09 UTC] websoft365com@gmail.com
+[08-Apr-2020 15:05:09 UTC] Kinga Kovacs
+[08-Apr-2020 15:05:09 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:05:09 UTC] I have question
+[08-Apr-2020 15:08:14 UTC] websoft365com@gmail.com
+[08-Apr-2020 15:08:14 UTC] Kinga Kovacs
+[08-Apr-2020 15:08:14 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:08:14 UTC] I have question
+[08-Apr-2020 15:18:22 UTC] websoft365com@gmail.com
+[08-Apr-2020 15:18:22 UTC] Mate Toth
+[08-Apr-2020 15:18:22 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:18:22 UTC] teszt
+[08-Apr-2020 15:20:41 UTC] websoft365com@gmail.com
+[08-Apr-2020 15:20:41 UTC] Mate Toth
+[08-Apr-2020 15:20:41 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:20:41 UTC] megint
+[08-Apr-2020 15:25:18 UTC] tothmatee97@gmail.com
+[08-Apr-2020 15:25:18 UTC] Mate Toth
+[08-Apr-2020 15:25:18 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:25:18 UTC] fdsa
+[08-Apr-2020 15:26:54 UTC] websoft365com@gmail.com
+[08-Apr-2020 15:26:54 UTC] Mate Toth
+[08-Apr-2020 15:26:54 UTC] New WebSoft365 Contact Email
+[08-Apr-2020 15:26:54 UTC] amen
+[08-Apr-2020 15:40:48 UTC] PHP Notice:  Undefined index: logged_in in /var/www/html/settings.php on line 3
+[08-Apr-2020 15:48:39 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/admin_upload.php on line 3
+[08-Apr-2020 19:00:37 UTC] PHP Notice:  Undefined index: logged_in in /var/www/html/profile.php on line 3
+[08-Apr-2020 19:06:30 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/profile_admin.php on line 3
+[09-Apr-2020 06:00:00 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/profile_admin.php on line 3
+[09-Apr-2020 07:09:42 UTC] PHP Notice:  Undefined index: group_type in /var/www/html/admin.php on line 3
+[09-Apr-2020 07:10:00 UTC] PHP Notice:  Undefined index: logged_in in /var/www/html/profile.php on line 3
+[09-Apr-2020 08:29:45 UTC] PHP Notice:  Undefined index: logged_in in /var/www/html/settings.php on line 3
+[09-Apr-2020 10:13:52 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /var/www/html/backend/webhooks/paddle.php on line 8
+[09-Apr-2020 10:13:52 UTC] PHP Warning:  file_put_contents(/var/log/paddle.log): failed to open stream: Permission denied in /var/www/html/backend/webhooks/paddle.php on line 10
+[09-Apr-2020 10:17:28 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /var/www/html/backend/webhooks/paddle.php on line 8
+[09-Apr-2020 10:17:28 UTC] PHP Warning:  file_put_contents(/var/log/paddle.log): failed to open stream: Permission denied in /var/www/html/backend/webhooks/paddle.php on line 10
+[09-Apr-2020 10:19:25 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /var/www/html/backend/webhooks/paddle.php on line 8
+[09-Apr-2020 10:19:25 UTC] PHP Warning:  file_put_contents(/var/log/paddle.log): failed to open stream: Permission denied in /var/www/html/backend/webhooks/paddle.php on line 10
+[09-Apr-2020 10:20:15 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /var/www/html/backend/webhooks/paddle.php on line 8
+[09-Apr-2020 10:20:15 UTC] PHP Warning:  file_put_contents(/var/log/paddle.log): failed to open stream: Permission denied in /var/www/html/backend/webhooks/paddle.php on line 10
+[09-Apr-2020 10:20:27 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /var/www/html/backend/webhooks/paddle.php on line 8
+[09-Apr-2020 10:20:27 UTC] PHP Warning:  file_put_contents(/var/log/paddle.log): failed to open stream: Permission denied in /var/www/html/backend/webhooks/paddle.php on line 10
+[09-Apr-2020 10:20:47 UTC] PHP Fatal error:  Class 'EDD_Webhook_Handler' not found in /var/www/html/backend/webhooks/paddle.php on line 2
+[09-Apr-2020 10:22:14 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /var/www/html/backend/webhooks/paddle.php on line 8
+[09-Apr-2020 10:22:14 UTC] PHP Warning:  file_put_contents(/var/log/paddle.log): failed to open stream: Permission denied in /var/www/html/backend/webhooks/paddle.php on line 10
+[09-Apr-2020 10:22:14 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 61
+[09-Apr-2020 10:23:17 UTC] PHP Fatal error:  Class 'EDD_Webhook_Handler' not found in /var/www/html/backend/webhooks/paddle.php on line 3
+[09-Apr-2020 10:24:12 UTC] PHP Fatal error:  Class 'EDD_Webhook_Handler' not found in /var/www/html/backend/webhooks/paddle.php on line 3
+[09-Apr-2020 10:26:41 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 10:27:44 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 10:32:25 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 10:33:39 UTC] PHP Warning:  require(../include/common.php): failed to open stream: No such file or directory in /var/www/html/backend/webhooks/paddle.php on line 12
+[09-Apr-2020 10:33:39 UTC] PHP Fatal error:  require(): Failed opening required '../include/common.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/backend/webhooks/paddle.php on line 12
+[09-Apr-2020 10:39:31 UTC] PHP Warning:  require(../include/common.php): failed to open stream: No such file or directory in /var/www/html/backend/webhooks/paddle.php on line 12
+[09-Apr-2020 10:39:31 UTC] PHP Fatal error:  require(): Failed opening required '../include/common.php' (include_path='.:/usr/share/pear:/usr/share/php') in /var/www/html/backend/webhooks/paddle.php on line 12
+[09-Apr-2020 10:39:57 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:40:01 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:43:21 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 10:43:28 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 10:43:50 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 10:44:12 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:44:16 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:44:24 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:44:52 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:45:07 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:50:38 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:52:04 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 10:52:26 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:08:51 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:09:06 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:09:41 UTC] PHP Notice:  Undefined variable: echo in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:09:41 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /var/www/html/backend/webhooks/paddle.php:37
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:10:29 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:11:06 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 11:12:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function openssl_get_public() in /var/www/html/backend/webhooks/paddle.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/backend/webhooks/paddle.php on line 18
+[09-Apr-2020 11:12:55 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:14:06 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 35
+[09-Apr-2020 11:15:55 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:15:59 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:16:59 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:19:52 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 36
+[09-Apr-2020 11:21:08 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:21:11 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:21:32 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 37
+[09-Apr-2020 11:23:02 UTC] 
+[09-Apr-2020 11:23:02 UTC] rπëDNE‰˜ª~ÀßaÕ3±V‘‘C`Ó?IÂ“	‰√˙⁄ç†Jﬁÿ˙ô!íàÔ‚5À”.“ºhOÛ§«ûÏãï/2ôŸQÀÄ‹ô.*%GQ∏≠¡˝$Z!åRuÙX˜Ûôàh§{±&£.û7RWÑÆnDé¢Ï«xè-H‚yÎ«¸4Áﬁ´ÀBñv~<ä¿4…ÑxÛº∆CÙ∫†∑∏«ŸóNôúæçXƒ o3Oc¶E“8æö"ÿúÊh0ﬂît»4√∆¸ùLÖM2*1	1Bàe°é|naõ—äH ÅuÃ∆›_ˆ¢Vf°Y•πí„áÖ˛∫™õÚ#–;k4Œ“{êgùj∑qﬂ:-ıæÙÀû'Õï˘≥ªı¡h
+[09-Apr-2020 11:23:02 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 38
+[09-Apr-2020 11:23:42 UTC] PHP Warning:  openssl_verify(): supplied key param cannot be coerced into a public key in /var/www/html/backend/webhooks/paddle.php on line 36

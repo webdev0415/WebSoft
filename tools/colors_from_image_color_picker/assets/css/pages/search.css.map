@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,cAAc,CAAC,WAAW,AAAA,IAAI,CAAC;EAC7B,aAAa,EAAE,GAAG,CAAC,KAAK,CAHA,mBAAkB,CAGQ,UAAU;CAC7D;;AAED,AAAA,eAAe,CAAC,WAAW,AAAA,IAAI,CAAC;EAC9B,MAAM,EAAE,eAAe;EACvB,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "search.scss",
+        "../_custom-variables/_pages.scss"
+    ],
+    "names": [],
+    "file": "search.css"
+}

@@ -1,0 +1,56 @@
+// -------------------------------------------------------------------------------
+// Theme mixin
+
+@mixin Codedthemes-common-theme($background, $color: null) {
+  @include text-emphasis-variant('.text-primary', $background);
+  @include bg-variant('.bg-primary', $background);
+  @include Codedthemes-badge-variant('.badge-primary', $background, $color);
+  @include Codedthemes-badge-outline-variant('.badge-outline-primary', $background);
+  @include Codedthemes-pagination-theme($background, $color);
+  @include Codedthemes-progress-bar-theme($background, $color);
+  @include Codedthemes-list-group-theme($background, $color);
+  @include Codedthemes-alert-variant('.alert-primary', $background);
+  @include Codedthemes-alert-dark-variant('.alert-dark-primary', $background, $color);
+  @include Codedthemes-tooltip-variant('.tooltip-primary, .tooltip-primary > .tooltip, .ngb-tooltip-primary + ngb-tooltip-window', $background, $color);
+  @include Codedthemes-popover-variant('.popover-primary, .popover-primary > .popover, .ngb-popover-primary + ngb-popover-window', $background, $color);
+  @include Codedthemes-table-row-variant('.table-primary', $background);
+  @include Codedthemes-button-variant('.btn-primary', $background, $color);
+  @include Codedthemes-button-outline-variant('.btn-outline-primary', $background, $color);
+  @include Codedthemes-dropdown-theme($background, $color);
+  @include Codedthemes-nav-theme($background, $color);
+  @include Codedthemes-custom-control-theme($background, $color);
+  @include Codedthemes-custom-file-input-theme($background);
+  @include Codedthemes-form-control-theme($background);
+  @include Codedthemes-switcher-theme($background, $color);
+  @include Codedthemes-navbar-variant('.navbar.bg-primary', $primary-color);
+  @include Codedthemes-sidenav-variant('.sidenav.bg-primary', $primary-color);
+  @include Codedthemes-footer-variant('.footer.bg-primary', $primary-color);
+  .fill-primary { fill: $background }
+}
+
+@mixin Codedthemes-common-material-theme($background, $color: null) {
+  @include text-emphasis-variant('.text-primary', $background);
+  @include bg-variant('.bg-primary', $background);
+  @include Codedthemes-badge-variant('.badge-primary', $background, $color);
+  @include Codedthemes-badge-outline-variant('.badge-outline-primary', $background);
+  @include Codedthemes-pagination-theme($background, $color);
+  @include Codedthemes-progress-bar-theme($background, $color);
+  @include Codedthemes-list-group-theme($background, $color);
+  @include Codedthemes-alert-variant('.alert-primary', $background);
+  @include Codedthemes-alert-dark-variant('.alert-dark-primary', $background, $color);
+  @include Codedthemes-tooltip-variant('.tooltip-primary, .tooltip-primary > .tooltip, .ngb-tooltip-primary + ngb-tooltip-window', $background, $color);
+  @include Codedthemes-popover-variant('.popover-primary, .popover-primary > .popover, .ngb-popover-primary + ngb-popover-window', $background, $color);
+  @include Codedthemes-table-row-variant('.table-primary', $background);
+  @include Codedthemes-material-button-variant('.btn-primary', $background, $color);
+  @include Codedthemes-material-button-outline-variant('.btn-outline-primary', $background, $color);
+  @include Codedthemes-material-dropdown-theme($background, $color);
+  @include Codedthemes-material-nav-theme($background, $color);
+  @include Codedthemes-material-custom-control-theme($background, $color);
+  @include Codedthemes-material-custom-file-input-theme($background);
+  @include Codedthemes-material-form-control-theme($background);
+  @include Codedthemes-material-switcher-theme($background);
+  @include Codedthemes-navbar-variant('.navbar.bg-primary', $primary-color);
+  @include Codedthemes-sidenav-variant('.sidenav.bg-primary', $primary-color);
+  @include Codedthemes-footer-variant('.footer.bg-primary', $primary-color);
+  .fill-primary { fill: $background }
+}

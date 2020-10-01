@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Drag and Drop Image Creator Tool</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Begin emoji-picker Stylesheets -->
+    <link href="lib/css/emoji.css" rel="stylesheet">
+    <!-- End emoji-picker Stylesheets -->
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="/components/report/report.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+ 
+<body>
+    <div class="alert alert-danger mobile_alert">
+        This Software is able to work on Desktop and laptop.
+    </div>
+    <div id="wrapper" class="wrapcontain">
+        <button class="btn btn-primary mb-2" id="change_file_name">Rename</button>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                        
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <input style="display: none;" id="openProjectFile" type="file" name="openProjectFile" accept="text/*">
+                                <a class="dropdown-toggle" data-toggle="dropdown" id="dropdown-toggle-p">
+                                <span class="glyphicon glyphicon-edit"></span> Open Project 
+                                </a>
+                                <div class="dropdown-menu" id="dropdown-menu-p">
+                                  <a class="dropdown-item" href="javascript:void(0)" id="openProjectButton">Local Drive</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="LoadProjectFromDropbox"> DropBox</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="LoadProjectFromGoogleDrive"> Google Drive</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- <a id="saveProjectButton" href="#"><span class="glyphicon glyphicon-share"></span> Save Project</a> -->
+                                <a style="display: none;" id="saveProjectFile" href="#" download=""></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-share"></span> Save Project 
+                                </a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0)" id="saveProjectButton">Local Drive</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="saveProjectToDropboxButton"> DropBox</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="saveProjectToGoogleDriveButton"> Google Drive</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                
+                                <input style="display: none;" id="openFile" type="file" name="openFile" accept="image/*" multiple>
+                                
+                                <a class="dropdown-toggle" data-toggle="dropdown" id="dropdown-toggle">
+                                <span class="glyphicon glyphicon-plus"></span> Add images to basket 
+                                </a>
+                                <div class="dropdown-menu" id="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0)" id="openButton">Local Drive</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="LoadMutipleFromDropbox"> DropBox</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="LoadMutipleFromGoogleDrive"> Google Drive</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a id="printButton" href="#"><span class="glyphicon glyphicon-print"></span> Print</a>
+                            </li>
+                            <li>
+                                <a style="display: none;" id="saveFile" href="#" download=""></a>
+                                <a href="javascript:void(0)" class="dropbox-saver" id="saveDropBox" style="display: none">
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-save"></span> Save to 
+                                </a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0)" id="saveButton">Local Drive</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="DropBoxUploadButton"> DropBox</a>
+                                  <a class="dropdown-item" href="javascript:void(0)" id="googleDriveUploadButton"> Google Drive</a>
+                                </div>
+                                
+                                <!-- <a id="saveButton" href="#"><span class="glyphicon glyphicon-save"></span> Save</a>
+                                <a style="display: none;" id="saveFile" href="#" download=""></a> -->
+                           
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container text-center">
+                <div class="row content" id="row_content">
+                    <div class="col-md-3 sidenav">
+                        <div style="margin-top: 1rem;margin-bottom: 1rem;text-align: left;">
+                        <button type="button" id="fullSizeBtn" class="btn btn-success"><span class="glyphicon glyphicon-text-size"></span> View full size image</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span id="fullSizeDisplay"></span>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li><a data-toggle="tab" href="#content">Content</a></li>
+                            <li class="active"><a data-toggle="tab" href="#background">Background</a></li>
+
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div id="content" class="tab-pane fade">
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">Text</div>
+                                        <div class="panel-body">
+                                            <button type="button" id="insertText" class="btn btn-success btn-block"><span class="glyphicon glyphicon-text-size"></span> Insert Text</button>
+                                        </div>
+                                        <div class="panel panel-default" id="optionsText">
+                                            <div class="panel-heading">Options</div>
+                                            <div class="panel-body">
+                                                <div class="form-group text-option" style="text-align: left;">
+                                                    <p class="lead emoji-picker-container">
+                                                    <textarea class="form-control" rows="3" id="blockText" data-emojiable="true" value="Enter Text Here" style="height: 100px;"></textarea>
+                                                    </p>
+                                                </div>
+                                                <!-- <textarea class="form-control" rows="3" id="blockText"  value="Enter Text Here"></textarea> -->
+                                                <div class="input-group input-group-sm text-option">
+                                                    <label class="input-group-addon" for="fontpickerText">Font</label>
+                                                    <div id="fontpickerText" class="bfh-selectbox bfh-fonts" data-font="Arial">
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group input-group-sm text-option">
+                                                    <label class="input-group-addon" for="fontsizepickerText">Size</label>
+                                                    <div id="fontsizepickerText" class="bfh-selectbox bfh-fontsizes" data-fontsize="12">
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group btn-group input-group-sm text-mode-buttons text-option">
+                                                    <button type="button" class="btn btn-default" data-method="setTextMode" data-option="left" title="Align Left">
+									<span class="glyphicon glyphicon-align-left"></span>
+									</span>
+									</button>
+                                                    <button type="button" class="btn btn-default" data-method="setTextMode" data-option="center" title="Align Center">
+									<span class="glyphicon glyphicon-align-center"></span>
+									</span>
+									</button>
+                                                    <button type="button" class="btn btn-default" data-method="setTextMode" data-option="right" title="Align Right">
+									<span class="glyphicon glyphicon-align-right"></span>
+									</span>
+									</button>
+                                                </div>
+
+                                                <div class="input-group btn-group input-group-sm text-mode-buttons text-option">
+                                                    <button type="button" class="btn btn-default" data-method="setTextMode" data-option="bold" title="bold">
+									<span class="glyphicon glyphicon-bold"></span>
+									</span>
+									</button>
+                                                    <button type="button" class="btn btn-default" data-method="setTextMode" data-option="italic" title="italic">
+									<span class="glyphicon glyphicon-italic"></span>
+									</span>
+									</button>
+                                                    <button type="button" class="btn btn-default" data-method="setTextMode" data-option="underline" title="Underline">
+									<span class="glyphicon glyphicon-text-color"></span>
+									</span>
+									</button>
+                                                </div>
+
+                                                <div id="colorpickerTextColor" class="input-group input-group-sm colorpicker-component text-option">
+                                                    <label class="input-group-addon" for="colorText">Color</label>
+                                                    <input type="text" value="#000000" class="form-control" id="colorText" />
+                                                    <span class="input-group-addon"><i></i></span>
+                                                </div>
+                                                <!--
+								<div class="input-group input-group-sm">
+									<label class="input-group-addon" for="resizeLayer">Size</label>
+									<input type="text" class="form-control" id="resizeLayer" value="100">
+									<span class="input-group-addon">%</span>
+								</div>
+
+								<div class="form-group">
+									<div id="sliderLayerResize" class=""></div>
+								</div>
+-->
+                                                <div class="input-group input-group-sm">
+                                                    <label class="input-group-addon" for="rotateLayer">Rotate</label>
+                                                    <input type="text" class="form-control" id="rotateLayer" value="0">
+                                                    <span class="input-group-addon">deg</span>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div id="sliderLayerRotate" class=""></div>
+                                                </div>
+                                                
+
+                                                <div class="input-group input-group-sm image-option">
+                                                    <label class="input-group-addon" for="opacityImage">Opacity</label>
+                                                    <input type="text" class="form-control" id="opacityImage" value="100">
+                                                    <span class="input-group-addon">%</span>
+                                                </div>
+
+                                                <div class="form-group image-option">
+                                                    <div id="sliderImageOpacity" class=""></div>
+                                                </div>
+
+                                                <div class="input-group btn-group input-group-sm image-mode-buttons image-option">
+                                                    <button type="button" class="btn btn-default" data-method="setImageMode" data-option="horizontal" data-value="-1" title="Flip Horizontal">
+									<span class="glyphicon glyphicon-resize-horizontal"></span>
+									</span>
+									</button>
+                                                    <button type="button" class="btn btn-default" data-method="setImageMode" data-option="vertical" data-value="-1" title="Flip Vertical">
+									<span class="glyphicon glyphicon-resize-vertical"></span>
+									</span>
+									</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div id="background" class="tab-pane fade  in active">
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">Background</div>
+                                        <div class="panel-body">
+                                            <div id="colorpickerBackground" class="input-group input-group-sm colorpicker-component">
+                                                <label class="input-group-addon" for="colorpickerBackgroundColor">Color</label>
+                                                <input type="text" value="#f7f7f7" class="form-control" id="colorpickerBackgroundColor" />
+                                                <span class="input-group-addon"><i></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">Canvas Size</div>
+                                        <div class="panel-body">
+                                            <div class="input-group input-group-sm">
+                                                <label class="input-group-addon" for="canvasWidth">Width</label>
+                                                <input type="number" class="form-control" id="canvasWidth" placeholder="width">
+                                                <span class="input-group-addon">px</span>
+                                            </div>
+
+                                            <div class="input-group input-group-sm">
+                                                <label class="input-group-addon" for="canvasHeight">Height</label>
+                                                <input type="number" class="form-control" id="canvasHeight" placeholder="height">
+                                                <span class="input-group-addon">px</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!-- Canvas: BEGIN -->
+                    <div class="col-md-7 canvas-container" style="width: 58%;">
+                        <div id="canvas-background"></div>
+                        <div class="form-group" style="margin-top: 15px;">
+                            <div id="sliderCanvasZoom" class=""></div>
+                            <span id="sliderDisplay" style="float:left;"></span>
+                        </div>
+                    </div>
+                    <!-- Canvas: END -->
+
+                    <!-- Photo Basket: BEGIN -->
+                    <div class="col-md-2 sidenav">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><span class="glyphicon glyphicon-th-list"></span> Photo Basket</div>
+                            <div class="panel-body">
+                                <div class="photo-gallery">
+                                    <ul id="photoBasket" class="photo-pictures clearfix"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Photo Basket: END -->
+                </div>
+            </div>
+
+
+            <!-- Modal Project -->
+            <div id="saveProjectModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Save As</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileName">File Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="fileProjectName">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group  pull-left">
+                                <button type="button" class="btn btn-primary" id="saveButtonProjectModal" title="Save">
+                				<span class="glyphicon glyphicon-save"></span></span> Save
+                			</button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="saveProjectToDropboxModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Save As</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileName">File Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="fileProjectToDropboxName">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group  pull-left">
+                                <button type="button" class="btn btn-primary" id="saveButtonProjectToDropboxModal" title="Save">
+                                <span class="glyphicon glyphicon-save"></span></span> Save To Dropbox
+                            </button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="saveProjectToGoogleDriveModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Save As</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileName">File Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="fileProjectToGoogleDriveName">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group  pull-left">
+                                <button type="button" class="btn btn-primary" id="saveButtonProjectToGoogleDriveModal" title="Save">
+                                <span class="glyphicon glyphicon-save"></span></span> Save to Google Drive
+                            </button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div id="saveModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Save As</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileName">File Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="fileName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileName">File Type:</label>
+                                    <div class="col-sm-6">
+                                        <label class="radio-inline"><input type="radio" value="jpg" checked="checked" name="fileExt">jpg</label>
+                                        <label class="radio-inline"><input type="radio" value="png" name="fileExt">png</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group  pull-left">
+                                <button type="button" class="btn btn-primary" id="saveButtonModal" title="Save">
+                    				<span class="glyphicon glyphicon-save"></span></span> Save
+                    			</button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="saveToDropboxModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Save As</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileDropboxName">File Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="fileDropboxName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileDropboxName">File Type:</label>
+                                    <div class="col-sm-6">
+                                        <label class="radio-inline"><input type="radio" value="jpg" checked="checked" name="fileExt">jpg</label>
+                                        <label class="radio-inline"><input type="radio" value="png" name="fileExt">png</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group  pull-left">
+                                <button type="button" class="btn btn-primary" id="DropBoxUploadButtonModal" title="Save To Dropbox">
+                                    <span class="glyphicon glyphicon-save"></span></span> Save To Dropbox
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="saveToGoogleDriveModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Save As</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileGoogleDriveName">File Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="fileGoogleDriveName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-3" for="fileGoogleDriveName">File Type:</label>
+                                    <div class="col-sm-6">
+                                        <label class="radio-inline"><input type="radio" value="jpg" checked="checked" name="fileExt">jpg</label>
+                                        <label class="radio-inline"><input type="radio" value="png" name="fileExt">png</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group  pull-left">
+                                <button type="button" class="btn btn-primary" id="googleDriveUploadButtonModal" title="Save To Dropbox">
+                                    <span class="glyphicon glyphicon-save"></span></span> Save To Google Drive
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/dropbox/dist/Dropbox-sdk.min.js"></script>
+    <script src="./credential.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="6g7uad726rdvf1c"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+
+    <script>
+      //this techinque for avoid conflicting dropins and dropbox sdk
+      var DropboxSdk = new Dropbox.Dropbox({ accessToken: accessToken, fetch: fetch });
+      var dropins = Dropbox;
+    </script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootbox.min.js"></script>
+    <script src="js/bootstrap-colorpicker.min.js"></script>
+    <script src="js/bootstrap-formhelpers.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.2/fabric.min.js"></script>
+
+     <script src="lib/js/config.js"></script>
+    <script src="lib/js/util.js"></script>
+    <script src="lib/js/jquery.emojiarea.js"></script>
+    <script src="lib/js/emoji-picker.js"></script>
+
+    <script>
+        $(function() {
+          // Initializes and creates emoji set from sprite sheet
+          window.emojiPicker = new EmojiPicker({
+            emojiable_selector: '[data-emojiable=true]',
+            assetsPath: '../lib/img/',
+            popupButtonClasses: 'fa fa-smile-o'
+          });
+          // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+          // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+          // It can be called as many times as necessary; previously converted input fields will not be converted again
+          window.emojiPicker.discover();
+        });
+      </script>
+      <script>
+        // Google Analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+        ga('create', 'UA-49610253-3', 'auto');
+        ga('send', 'pageview');
+      </script>
+</body>
+
+</html>

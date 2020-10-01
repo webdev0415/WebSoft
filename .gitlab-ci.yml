@@ -1,0 +1,8 @@
+stages:
+  - deploy
+deploy:
+  stage: deploy
+  script:
+    - cp -rf * /var/www/html
+    - chmod 755 /var/www/html/phpMyAdmin/config.inc.php
+    - chmod 777 /var/www/html/backend/footer_stats.json

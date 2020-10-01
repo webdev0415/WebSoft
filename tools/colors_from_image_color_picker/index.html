@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="default-style layout-fixed layout-navbar-fixed">
+
+<head>
+	<title>Color Picker</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Empire is one of the unique admin template built on top of Bootstrap 4 framework. It is easy to customize, flexible code styles, well tested, modern & responsive are the topmost key factors of Empire Dashboard Template" />
+	<meta name="keywords" content="bootstrap admin template, dashboard template, backend panel, bootstrap 4, backend template, dashboard template, saas admin, CRM dashboard, eCommerce dashboard">
+	<meta name="author" content="Codedthemes" />
+	<!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"> -->
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<!-- Icon fonts -->
+	<link rel="stylesheet" href="assets/fonts/fontawesome.css">
+	<link rel="stylesheet" href="assets/fonts/ionicons.css">
+	<link rel="stylesheet" href="assets/fonts/linearicons.css">
+	<link rel="stylesheet" href="assets/fonts/open-iconic.css">
+	<link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="assets/fonts/feather.css">
+	<!-- Core stylesheets -->
+	<link rel="stylesheet" href="assets/css/bootstrap-material.css">
+	<link rel="stylesheet" href="assets/css/shreerang-material.css">
+	<link rel="stylesheet" href="assets/css/uikit.css">
+	<script src="assets/js/material-ripple.js"></script>
+	<script src="assets/js/layout-helpers.js"></script>
+	<!-- Core scripts -->
+	<script src="assets/js/pace.js"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<!-- Libs -->
+	<link rel="stylesheet" href="assets/libs/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" href="assets/libs/cropper/cropper.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/tooltip.css"> </head>
+	<link rel="stylesheet" type="text/css" href="style.css"> </head>
+
+<body>
+
+	<div class="layout" style="padding-bottom:5vh!important;">
+		<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-dark container-p-x" id="layout-navbar">
+			<div class="navbar-media">
+				<ul class="nav nav-tabs">
+						<li class="nav-item"> <a class="nav-link show active" data-toggle="tab" href="#edit-img">Edit Image</a> </li>
+						<li class="nav-item"> <a class="nav-link show" data-toggle="tab" href="#color-pick-from-img">Color Pick From Image</a> </li>
+						<li class="nav-item"> <a class="nav-link show" data-toggle="tab" href="#color-picker">Color Picker</a> </li>
+				</ul>
+			</div>
+			<div class="navbar-collapse collapse" id="layout-navbar-collapse">
+				<!-- Divider -->
+				<hr class="d-lg-none w-100 my-2">
+				<div class="navbar-nav align-items-lg-center">
+					<ul class="nav nav-tabs">
+						<li class="nav-item"> <a class="nav-link show active" data-toggle="tab" href="#edit-img">Edit Image</a> </li>
+						<li class="nav-item"> <a class="nav-link show" data-toggle="tab" href="#color-pick-from-img">Color Pick From Image</a> </li>
+						<li class="nav-item"> <a class="nav-link show" data-toggle="tab" href="#color-picker">Color Picker</a> </li>
+					</ul>
+				</div>
+				<div class="navbar-nav align-items-lg-center ml-auto">
+					
+				</div>
+			</div>
+		</nav>
+		<div class="layout tab-content" style="padding-top: 75px; padding-left: 0 !important;">
+			<div id="edit-img" class="container-fluid flex-grow-1 tab-pane fade show active">
+				<h4 class="font-weight-bold py-3 mb-0">Edit Image</h4>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="cropper-example-container"> 
+							<img id="cropper-example-image" src="10.jpg" alt="Crope Image"> 
+						</div>
+						<div class="cropper-example-buttons">
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-primary" data-method="zoom" data-option="0.1" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;zoom&quot;,&nbsp;0.1)"> <span class="ion ion-md-add"></span> </button>
+								<button type="button" class="btn btn-primary" data-method="zoom" data-option="-0.1" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;zoom&quot;,&nbsp;-0.1)"> <span class="ion ion-md-remove"></span> </button>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-primary" data-method="move" data-option="-10" data-second-option="0" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;move&quot;,&nbsp;-10,&nbsp;0)"><span class="ion ion-md-arrow-back"></span></button>
+								<button type="button" class="btn btn-primary" data-method="move" data-option="10" data-second-option="0" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;move&quot;,&nbsp;10,&nbsp;0)"><span class="ion ion-md-arrow-forward"></span></button>
+								<button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="-10" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;move&quot;,&nbsp;0,&nbsp;-10)"><span class="ion ion-md-arrow-up"></span></button>
+								<button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="10" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;move&quot;,&nbsp;0,&nbsp;10)"><span class="ion ion-md-arrow-down"></span></button>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-primary" data-method="rotate" data-option="-45" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;rotate&quot;,&nbsp;-45)"><span class="ion ion-md-refresh"></span></button>
+								<button type="button" class="btn btn-primary" data-method="rotate" data-option="45" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;rotate&quot;,&nbsp;45)"><span class="ion ion-md-refresh scaleX--1"></span></button>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-primary" data-method="scaleX" data-option="-1" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;scaleX&quot;,&nbsp;-1)"><span class="ion ion-md-swap"></span></button>
+								<button type="button" class="btn btn-primary" data-method="scaleY" data-option="-1" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;scaleY&quot;,&nbsp;-1)"><span class="ion ion-md-swap rotate--90"></span></button>
+							</div>
+							<div class="btn-group mb-1">
+								<button type="button" class="btn btn-primary" data-method="getCroppedCanvas" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;getCroppedCanvas&quot;)">Get Cropped Canvas</button>
+								<button type="button" class="btn btn-primary" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 160, &quot;height&quot;: 90 }" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;getCroppedCanvas&quot;, {width:&nbsp;160,&nbsp;height:&nbsp;90})">160&times;90</button>
+								<button type="button" class="btn btn-primary" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 320, &quot;height&quot;: 180 }" data-toggle="cropper-example-tooltip" title="$().cropper(&quot;getCroppedCanvas&quot;, {width:&nbsp;320,&nbsp;height:&nbsp;180})">320&times;180</button>
+							</div>
+							<div class="btn-group mb-1">
+								<label class="btn btn-primary btn-upload" data-toggle="cropper-example-tooltip" title="Upload image file">Upload File
+									<input type="file" class="sr-only" id="cropper-example-inputImage" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff"><span class="ion ion-md-cloud-upload"></span></label>
+							</div>
+							<div class="btn-group mb-1 load_img_url" style="width: 100%; margin-top: 5px;">
+								<button class="btn btn-primary" style="width: 200px">IMAGE URL</button>
+								<input type="text" class="form-control import_url_input input_page_1" placeholder="https://" style="padding-left: 20px" ></label>
+								<button class="btn btn-primary" id="clear_url_1" style="width: 200px">Clear</button>
+							 </div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<!-- Preview -->
+						<div class="mb-3 clearfix">
+							<div class="cropper-example-preview lg"></div>
+							<div class="cropper-example-preview md"></div>
+							<div class="cropper-example-preview sm"></div>
+							<div class="cropper-example-preview xs"></div>
+						</div>
+						<!-- Data -->
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">X</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataX" placeholder="x" readonly>
+							<div class="input-group-append"> <span class="input-group-text">px</span> </div>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Y</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataY" placeholder="y" readonly>
+							<div class="input-group-append"> <span class="input-group-text">px</span> </div>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Width</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataWidth" placeholder="width" readonly>
+							<div class="input-group-append"> <span class="input-group-text">px</span> </div>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Height</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataHeight" placeholder="height" readonly>
+							<div class="input-group-append"> <span class="input-group-text">px</span> </div>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Rotate</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataRotate" placeholder="rotate" readonly>
+							<div class="input-group-append"> <span class="input-group-text">deg</span> </div>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">ScaleX</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataScaleX" placeholder="scaleX" readonly>
+							<div class="clearfix"></div>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">ScaleY</span> </div>
+							<input type="text" class="form-control" id="cropper-example-dataScaleY" placeholder="scaleY" readonly>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<!-- Show the cropped image in modal -->
+				<div class="modal fade cropper-example-cropped" id="cropper-example-getCroppedCanvasModal" aria-hidden="true" aria-labelledby="cropper-example-getCroppedCanvasTitle" role="dialog" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="cropper-example-getCroppedCanvasTitle">Cropped</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							</div>
+							<div class="modal-body ie-mh-1"></div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <a class="btn btn-primary" id="cropper-example-download" href="#;" download="cropped.jpg">Download</a> </div>
+						</div>
+					</div>
+				</div>
+				<!-- /.modal -->
+			</div>
+			<div id="color-pick-from-img" class="container-fluid tab-pane fade">
+				<h4 class="font-weight-bold py-3 mb-0">Color Pick From Image</h4>
+
+				<div class="row">
+					<div class="col-md-9" >
+						<div  class="cropper-example-container cropper-container cropper-bg" id="from_image_container" style="background-color: grey"> 
+							<img id="color-pick-example-image" src="10.jpg" style="display: none;" alt="Crope Image"> 
+							<canvas id="canvas-color-pick"></canvas>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="mb-3 clearfix" style="display: flex;justify-content: center;">
+							<div class="viewColor"></div>
+						</div>
+						<!-- Data -->
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Red</span> </div>
+							<input type="text" class="form-control" id="picked-R" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Green</span> </div>
+							<input type="text" class="form-control" id="picked-G" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Blue</span> </div>
+							<input type="text" class="form-control" id="picked-B" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">HEX</span> </div>
+							<input type="text" class="form-control" id="picked-HEX" placeholder="0" readonly>
+						</div>
+
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> 
+								<span class="input-group-text"> 
+									<div id="preview-picked-color" style="width: 20px; height: 20px; background-color: grey"></div>
+								</span>
+							</div>
+							<input type="text" class="form-control" id="pick-history" placeholder="0" readonly value="221faf">
+							<button class="btn btn-secondary btn-sm" id="copy_hex2">Copy</button> 
+						</div>
+						<div class="colorpicker_save_color">
+							<button class="btn btn-primary" page="from_image">Save color</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="cropper-example-buttons col-md-9">
+						
+						<div class="btn-group">
+							<label class="btn btn-primary btn-upload" data-toggle="cropper-example-tooltip" title="Upload image file" style="padding-left: 10px; padding-right: 10px">Upload File
+							<input type="file" class="sr-only" id="pick-color-image" onchange="readURL(this)" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff"><span class="ion ion-md-cloud-upload"></span></label>
+						</div>
+
+						<div class="btn-group mb-1 load_img_url" style="width: 100%; margin-top: 5px;">
+							<button class="btn btn-primary" style="width: 200px">IMAGE URL</button>
+							<input type="text" class="form-control import_url_input input_page_2" placeholder="https://" style="padding-left: 20px" onchange="importUrlChangeListener()" ></label>
+							<button class="btn btn-primary" id="clear_url_2" style="width: 200px" >Clear</button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<hr class="divider">
+				<br>
+				<h4 class="font-weight-bold py-3 mb-0">Saved colors</h4>
+				<div class="row savedColors"></div>
+			</div>
+			
+			<div id="color-picker" class="container-fluid tab-pane fade">
+				<h4 class="font-weight-bold py-3 mb-0">Color Picker</h4>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="cropper-example-container" style="padding: 30px; display: flex; justify-content: center;" id = "color-picker-iro">
+						
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="mb-3 clearfix" style="display: flex;justify-content: center;">
+							<div class="viewColor2"></div>
+						</div>
+						<!-- Data -->
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Red</span> </div>
+							<input type="text" class="form-control" id="picked-iro-R" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Green</span> </div>
+							<input type="text" class="form-control" id="picked-iro-G" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">Blue</span> </div>
+							<input type="text" class="form-control" id="picked-iro-B" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="input-group-prepend"> <span class="input-group-text">HSL</span> </div>
+							<input type="text" class="form-control" id="picked-iro-HSR" placeholder="0" readonly>
+						</div>
+						<div class="input-group input-group-sm mb-1">
+							<div class="picked_iro_hex_color"></div>
+							<div class="input-group-prepend"> <span class="input-group-text">HEX</span></div>
+							<input type="text" class="form-control" id="picked-iro-HEX" placeholder="0" readonly>
+							<button class="btn btn-secondary btn-sm" id="copy_hex">Copy</button>
+						</div>
+						<div class="colorpicker_save_color">
+							<button class="btn btn-primary" page="colorpicker">Save color</button>
+						</div>
+					</div>
+				</div>
+				<h4 class="font-weight-bold py-3 mb-0">Saved colors</h4>
+				<div class="row savedColors"></div>
+			</div>
+			<!-- [ Layout footer ] End -->
+		</div>
+		<!-- Overlay -->
+		<div class="layout-overlay layout-sidenav-toggle"></div>
+	</div>
+
+
+	<!-- Core scripts -->
+	<script src="colorPick.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/libs/popper/popper.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/layout-helpers.js"></script>
+	<script src="assets/js/material-ripple.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<!-- Libs -->
+	<script src="assets/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+	<script src="assets/libs/cropper/cropper.js"></script>
+	<!-- Demo -->
+	<script src="assets/js/pages/ui_cropper.js"></script>
+	<script src="assets/js/new_design.js"></script>
+</body>
+
+</html>

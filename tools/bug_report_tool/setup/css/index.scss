@@ -1,0 +1,553 @@
+#bug_report_tool_setup {
+  padding: 3%;
+
+  .bug_report_button {
+    text-align: center;
+    width: 90%;
+    margin: 15%;
+    margin-top: 70px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    color: grey;
+    border-style: dashed;
+    height: 350px;
+  }
+
+  .bug_report_button h4 {
+    margin-top: 3%;
+  }
+
+  #new_project_content h1 {
+    padding-top: 80px;
+    font-size: 100px !important;
+  }
+
+  #new_project_btn:hover {
+    cursor: pointer;
+  }
+
+  /* ------------------------------- MODAL BOX ----------------------------------------------*/
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+
+    /* Modal Content */
+    .modal-content {
+      position: fixed;
+      background-color: #fefefe;
+      width: 100%;
+      top: 0;
+      right: auto;
+      left: 0;
+      float: right;
+      -webkit-animation-name: slideIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slideIn;
+      animation-duration: 0.4s;
+      height: -webkit-fill-available;
+      overflow: auto;
+    }
+
+    .modal-header h4 {
+      color: #0278f7;
+    }
+
+    /* The Close Button */
+    .close {
+      color: black;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      padding-top: 18px;
+      color: white;
+    }
+
+    .modal-body {
+      padding: 2px 16px;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes slideIn {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .jscolor {
+    display: block;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    float: right;
+  }
+  h6 {
+    float: left;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    padding-top: 5px;
+  }
+  #new_project_modal {
+    display: none;
+  }
+  .toggle.btn.btn-primary {
+    margin-left: 10px;
+    float: right;
+  }
+  .form-group {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .custom_item {
+    background-color: #fcfcfc;
+    border: solid 1px #e6e9ec;
+    border-radius: 3px;
+    padding: 2px;
+    float: left;
+    width: 100%;
+  }
+  .switch {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .chooser1 {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 10px;
+    float: right;
+    border: 1px black solid;
+    margin-bottom: auto;
+  }
+  #colorpicker_choose {
+    background-color: #00cc99;
+  }
+  #colorpicker_choose_text {
+    background-color: #ffffff;
+  }
+  #colorpicker_choose_border {
+    background-color: #ffffff;
+  }
+  .pl-0 {
+    padding-left: 0;
+  }
+  iframe {
+    height: 65vh;
+    border-radius: 8px;
+    border: 1.5px solid grey;
+  }
+  .card-header {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #save_settings {
+    float: right;
+  }
+  #edit_save_settings {
+    float: right;
+  }
+  #open-close-lsettings,
+  #open-close-lsettings2 {
+    float: right;
+    padding-right: 5px;
+  }
+  .settings_form {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .toggle.btn.btn-sm.btn-default.off {
+    float: right;
+    background-color: lightgray;
+  }
+  .settings_wrapper {
+    height: 73vh;
+  }
+  .settings_wrapper2 {
+    height: 140vh;
+  }
+  .openTab {
+    -webkit-animation-name: openTab;
+    -webkit-animation-duration: 1s;
+    animation-name: openTab;
+    animation-duration: 1s;
+  }
+  .flex-column {
+    display: flex;
+  }
+  .branding_wrapper {
+    margin-bottom: 0;
+  }
+  .bottom-form-group {
+    bottom: 0 !important;
+  }
+  @-webkit-keyframes openTab {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes openTab {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  .modal_text_wrapper {
+    padding-top: 5px;
+  }
+  .domain_name_label {
+    width: 100%;
+  }
+  .button_border_container {
+    margin-top: 32px;
+  }
+  #add_more_domains {
+    float: right;
+  }
+  .display-block {
+    display: block;
+  }
+  .display-none {
+    display: none;
+  }
+
+  .pl-0 {
+    padding-left: 0 !important;
+  }
+  .bug_report_button hr {
+    margin-bottom: 0 !important;
+  }
+  .row.code_snippet_text {
+    bottom: 0;
+    margin-top: 10px;
+  }
+  .domain_status_h6 {
+    border: 3px solid black;
+    padding: 5px !important;
+    border-radius: 2px;
+    float: none !important;
+    margin: 0px !important;
+    height: 31px;
+    font-size: 14px!important;
+    display: table-cell;
+  }
+  .domain_status_open{
+    border-color:#28A745;
+  }
+  .domain_status_closed{
+    border-color: #E0A800;
+  }
+  .webkit_center {
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  img#add_new_domain_image {
+    width: 70%;
+  }
+
+  .send_email_text {
+    color: black;
+  }
+  .report_header_row {
+    width: 100% !important;
+  }
+  .report_element {
+    width: 22%;
+    margin: 2%;
+  }
+  #headingTwo, #headingThree {
+    text-align: center !important;
+  }
+  .card-body-row {
+    width: 100% !important;
+  }
+  .card-body-two, .card-body-three {
+    text-align: center !important;
+  }
+  .card-body-two h6 {
+    float: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .card-body-row .col-6 {
+    margin-bottom: 2%;
+  }
+  .report_element,
+  #report_email_submit {
+    float: left;
+  }
+  button#report_email_submit {
+    margin: 2%;
+    width: 17%;
+  }
+  .report_email_delete {
+    margin: 2% !important;
+    width: 12% !important;
+    margin-left: 30% !important;
+  }
+  .card-body-row,
+  .member-list-row {
+    margin-left: 7%;
+    max-width: 86%;
+    background-color: #f7f7f7;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+  }
+  .report_email_li {
+    list-style: none;
+    float: left;
+    width: 25%;
+  }
+  .report_email_li input {
+    float: left;
+    margin-top: 16px;
+  }
+  .report_email_li h6 {
+    padding-left: 30px !important;
+    text-align: left;
+  }
+  .member-list-row {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  #addTeamMember {
+    width: 100%;
+  }
+  .reportListBody_tr:hover{
+    cursor:pointer;
+    background-color:lightgrey;
+  }
+  #issue_modal{
+    display:none;
+  }
+  #issue_table{
+    width:100%;
+  }
+  .issue_form_status{
+    margin-bottom:2vh;
+  }
+  .reports_settings_icon{
+    width: 30px;
+  }
+
+  h4.report_issue_comment {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.check_report_icon{
+  background-color: transparent;
+  border: none;
+}
+.dropdown-menu {
+  padding:0!important;
+}
+.dropdown-menu li {
+  padding-left:12px!important;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+.dropdown-menu li:hover {
+  text-decoration:none;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+.dropdown-toggle {
+  color: black;
+  border: 1px black solid;
+}
+.change_report_status{
+  color:black;
+}
+.change_report_status:hover{
+  text-decoration: none;
+}
+.dropdown{
+  margin-bottom:2%;
+}
+.status_pill_btn{
+    padding: 12px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border: 1px solid white;
+    border-radius: 16px;
+    color: white;
+    margin:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.status_pill_btn:hover{
+  cursor:pointer;
+}
+.status_pill_open{
+ background-color:#28A745;
+}
+.status_pill_in_progress{
+  background-color:#30ACD6;
+}
+.status_pill_resolved{
+  background-color:#DC3545;
+}
+.status_pill_closed{
+  background-color: #E0A800;
+}
+.pill_button_deactivated{
+  background-color: grey;
+}
+#issue_page_title {
+  max-width: 100%;
+  word-break: break-all;
+}
+.report_issue_comment {
+  max-width: 100%;
+  word-break: break-all;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.change_to_open_dot{
+  background-color: #28A745;
+}
+.change_to_in_progress_dot{
+  background-color: #30ACD6;
+}
+.change_to_resolved_dot{
+  background-color: #DC3545;
+}
+.change_to_closed_dot{
+  background-color: #E0A800;
+}
+.delete_selected_reports{
+  width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 25px;
+}
+.fa-trash {
+  font-size: 1.5em;
+}
+.dropdown-toggle-main{
+  margin-left: 25px;
+}
+.delete_button_container{
+  display:inline!important;
+}
+.dropdown-menu-main{
+  float:none;
+  position: absolute;
+  top: 0;
+  margin-top: 36px;
+  margin-left: 174px;
+}
+.table_wrapper {
+  border: 1px solid black;
+  padding:12px;
+  border-radius:3px;
+}
+.report_issue_comment_wrapper {
+  border: solid black 1px;
+  width: 100%;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 3px;
+}
+.reports_content_tr{
+  text-align:center;
+}
+.emailAlertWrapper {
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#emailAlertOption {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+}

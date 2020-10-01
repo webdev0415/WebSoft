@@ -1,0 +1,658 @@
+#bug_report_tool_setup {
+  padding: 3%;
+  /* ------------------------------- MODAL BOX ----------------------------------------------*/
+}
+
+#bug_report_tool_setup .bug_report_button {
+  text-align: center;
+  width: 90%;
+  margin: 15%;
+  margin-top: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid black;
+  color: grey;
+  border-style: dashed;
+  height: 350px;
+}
+
+#bug_report_tool_setup .bug_report_button h4 {
+  margin-top: 3%;
+}
+
+#bug_report_tool_setup #new_project_content h1 {
+  padding-top: 80px;
+  font-size: 100px !important;
+}
+
+#bug_report_tool_setup #new_project_btn:hover {
+  cursor: pointer;
+}
+
+#bug_report_tool_setup .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  /* Modal Content */
+  /* The Close Button */
+  /* Add Animation */
+}
+
+#bug_report_tool_setup .modal .modal-content {
+  position: fixed;
+  background-color: #fefefe;
+  width: 100%;
+  top: 0;
+  right: auto;
+  left: 0;
+  float: right;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  height: -webkit-fill-available;
+  overflow: auto;
+}
+
+#bug_report_tool_setup .modal .modal-header h4 {
+  color: #0278f7;
+}
+
+#bug_report_tool_setup .modal .close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#bug_report_tool_setup .modal .close:hover,
+#bug_report_tool_setup .modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#bug_report_tool_setup .modal .modal-header {
+  padding: 2px 16px;
+  padding-top: 18px;
+  color: white;
+}
+
+#bug_report_tool_setup .modal .modal-body {
+  padding: 2px 16px;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#bug_report_tool_setup .jscolor {
+  display: block;
+  width: 1px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  float: right;
+}
+
+#bug_report_tool_setup h6 {
+  float: left;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+#bug_report_tool_setup #new_project_modal {
+  display: none;
+}
+
+#bug_report_tool_setup .toggle.btn.btn-primary {
+  margin-left: 10px;
+  float: right;
+}
+
+#bug_report_tool_setup .form-group {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+#bug_report_tool_setup .custom_item {
+  background-color: #fcfcfc;
+  border: solid 1px #e6e9ec;
+  border-radius: 3px;
+  padding: 2px;
+  float: left;
+  width: 100%;
+}
+
+#bug_report_tool_setup .switch {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#bug_report_tool_setup .chooser1 {
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 10px;
+  float: right;
+  border: 1px black solid;
+  margin-bottom: auto;
+}
+
+#bug_report_tool_setup #colorpicker_choose {
+  background-color: #00cc99;
+}
+
+#bug_report_tool_setup #colorpicker_choose_text {
+  background-color: #ffffff;
+}
+
+#bug_report_tool_setup #colorpicker_choose_border {
+  background-color: #ffffff;
+}
+
+#bug_report_tool_setup .pl-0 {
+  padding-left: 0;
+}
+
+#bug_report_tool_setup iframe {
+  height: 65vh;
+  border-radius: 8px;
+  border: 1.5px solid grey;
+}
+
+#bug_report_tool_setup .card-header {
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#bug_report_tool_setup #save_settings {
+  float: right;
+}
+
+#bug_report_tool_setup #edit_save_settings {
+  float: right;
+}
+
+#bug_report_tool_setup #open-close-lsettings,
+#bug_report_tool_setup #open-close-lsettings2 {
+  float: right;
+  padding-right: 5px;
+}
+
+#bug_report_tool_setup .settings_form {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#bug_report_tool_setup .toggle.btn.btn-sm.btn-default.off {
+  float: right;
+  background-color: lightgray;
+}
+
+#bug_report_tool_setup .settings_wrapper {
+  height: 73vh;
+}
+
+#bug_report_tool_setup .settings_wrapper2 {
+  height: 140vh;
+}
+
+#bug_report_tool_setup .openTab {
+  -webkit-animation-name: openTab;
+  -webkit-animation-duration: 1s;
+  animation-name: openTab;
+  animation-duration: 1s;
+}
+
+#bug_report_tool_setup .flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#bug_report_tool_setup .branding_wrapper {
+  margin-bottom: 0;
+}
+
+#bug_report_tool_setup .bottom-form-group {
+  bottom: 0 !important;
+}
+
+@-webkit-keyframes openTab {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes openTab {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#bug_report_tool_setup .modal_text_wrapper {
+  padding-top: 5px;
+}
+
+#bug_report_tool_setup .domain_name_label {
+  width: 100%;
+}
+
+#bug_report_tool_setup .button_border_container {
+  margin-top: 32px;
+}
+
+#bug_report_tool_setup #add_more_domains {
+  float: right;
+}
+
+#bug_report_tool_setup .display-block {
+  display: block;
+}
+
+#bug_report_tool_setup .display-none {
+  display: none;
+}
+
+#bug_report_tool_setup .pl-0 {
+  padding-left: 0 !important;
+}
+
+#bug_report_tool_setup .bug_report_button hr {
+  margin-bottom: 0 !important;
+}
+
+#bug_report_tool_setup .row.code_snippet_text {
+  bottom: 0;
+  margin-top: 10px;
+}
+
+#bug_report_tool_setup .domain_status_h6 {
+  border: 3px solid black;
+  padding: 5px !important;
+  border-radius: 2px;
+  float: none !important;
+  margin: 0px !important;
+  height: 31px;
+  font-size: 14px !important;
+  display: table-cell;
+}
+
+#bug_report_tool_setup .domain_status_open {
+  border-color: #28A745;
+}
+
+#bug_report_tool_setup .domain_status_closed {
+  border-color: #E0A800;
+}
+
+#bug_report_tool_setup .webkit_center {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+#bug_report_tool_setup img#add_new_domain_image {
+  width: 70%;
+}
+
+#bug_report_tool_setup .send_email_text {
+  color: black;
+}
+
+#bug_report_tool_setup .report_header_row {
+  width: 100% !important;
+}
+
+#bug_report_tool_setup .report_element {
+  width: 22%;
+  margin: 2%;
+}
+
+#bug_report_tool_setup #headingTwo, #bug_report_tool_setup #headingThree {
+  text-align: center !important;
+}
+
+#bug_report_tool_setup .card-body-row {
+  width: 100% !important;
+}
+
+#bug_report_tool_setup .card-body-two, #bug_report_tool_setup .card-body-three {
+  text-align: center !important;
+}
+
+#bug_report_tool_setup .card-body-two h6 {
+  float: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#bug_report_tool_setup .card-body-row .col-6 {
+  margin-bottom: 2%;
+}
+
+#bug_report_tool_setup .report_element,
+#bug_report_tool_setup #report_email_submit {
+  float: left;
+}
+
+#bug_report_tool_setup button#report_email_submit {
+  margin: 2%;
+  width: 17%;
+}
+
+#bug_report_tool_setup .report_email_delete {
+  margin: 2% !important;
+  width: 12% !important;
+  margin-left: 30% !important;
+}
+
+#bug_report_tool_setup .card-body-row,
+#bug_report_tool_setup .member-list-row {
+  margin-left: 7%;
+  max-width: 86%;
+  background-color: #f7f7f7;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+
+#bug_report_tool_setup .report_email_li {
+  list-style: none;
+  float: left;
+  width: 25%;
+}
+
+#bug_report_tool_setup .report_email_li input {
+  float: left;
+  margin-top: 16px;
+}
+
+#bug_report_tool_setup .report_email_li h6 {
+  padding-left: 30px !important;
+  text-align: left;
+}
+
+#bug_report_tool_setup .member-list-row {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+#bug_report_tool_setup #addTeamMember {
+  width: 100%;
+}
+
+#bug_report_tool_setup .reportListBody_tr:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+#bug_report_tool_setup #issue_modal {
+  display: none;
+}
+
+#bug_report_tool_setup #issue_table {
+  width: 100%;
+}
+
+#bug_report_tool_setup .issue_form_status {
+  margin-bottom: 2vh;
+}
+
+#bug_report_tool_setup .reports_settings_icon {
+  width: 30px;
+}
+
+#bug_report_tool_setup h4.report_issue_comment {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+#bug_report_tool_setup .check_report_icon {
+  background-color: transparent;
+  border: none;
+}
+
+#bug_report_tool_setup .dropdown-menu {
+  padding: 0 !important;
+}
+
+#bug_report_tool_setup .dropdown-menu li {
+  padding-left: 12px !important;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#bug_report_tool_setup .dropdown-menu li:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+#bug_report_tool_setup .dropdown-toggle {
+  color: black;
+  border: 1px black solid;
+}
+
+#bug_report_tool_setup .change_report_status {
+  color: black;
+}
+
+#bug_report_tool_setup .change_report_status:hover {
+  text-decoration: none;
+}
+
+#bug_report_tool_setup .dropdown {
+  margin-bottom: 2%;
+}
+
+#bug_report_tool_setup .status_pill_btn {
+  padding: 12px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  border: 1px solid white;
+  border-radius: 16px;
+  color: white;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+#bug_report_tool_setup .status_pill_btn:hover {
+  cursor: pointer;
+}
+
+#bug_report_tool_setup .status_pill_open {
+  background-color: #28A745;
+}
+
+#bug_report_tool_setup .status_pill_in_progress {
+  background-color: #30ACD6;
+}
+
+#bug_report_tool_setup .status_pill_resolved {
+  background-color: #DC3545;
+}
+
+#bug_report_tool_setup .status_pill_closed {
+  background-color: #E0A800;
+}
+
+#bug_report_tool_setup .pill_button_deactivated {
+  background-color: grey;
+}
+
+#bug_report_tool_setup #issue_page_title {
+  max-width: 100%;
+  word-break: break-all;
+}
+
+#bug_report_tool_setup .report_issue_comment {
+  max-width: 100%;
+  word-break: break-all;
+}
+
+#bug_report_tool_setup .dot {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#bug_report_tool_setup .change_to_open_dot {
+  background-color: #28A745;
+}
+
+#bug_report_tool_setup .change_to_in_progress_dot {
+  background-color: #30ACD6;
+}
+
+#bug_report_tool_setup .change_to_resolved_dot {
+  background-color: #DC3545;
+}
+
+#bug_report_tool_setup .change_to_closed_dot {
+  background-color: #E0A800;
+}
+
+#bug_report_tool_setup .delete_selected_reports {
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 25px;
+}
+
+#bug_report_tool_setup .fa-trash {
+  font-size: 1.5em;
+}
+
+#bug_report_tool_setup .dropdown-toggle-main {
+  margin-left: 25px;
+}
+
+#bug_report_tool_setup .delete_button_container {
+  display: inline !important;
+}
+
+#bug_report_tool_setup .dropdown-menu-main {
+  float: none;
+  position: absolute;
+  top: 0;
+  margin-top: 36px;
+  margin-left: 174px;
+}
+
+#bug_report_tool_setup .table_wrapper {
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 3px;
+}
+
+#bug_report_tool_setup .report_issue_comment_wrapper {
+  border: solid black 1px;
+  width: 100%;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 3px;
+}
+
+#bug_report_tool_setup .reports_content_tr {
+  text-align: center;
+}
+
+#bug_report_tool_setup .emailAlertWrapper {
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#bug_report_tool_setup #emailAlertOption {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+/*# sourceMappingURL=index.css.map */

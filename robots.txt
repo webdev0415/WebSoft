@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://websoft365.com/websoft365_sitemap.xml
+Host: https://websoft365.com

@@ -1,0 +1,7 @@
+{
+  "phpfmt.php_bin": "php",
+  "editor.formatOnSave": false,
+  "[php]": {
+    "editor.formatOnSave": true
+  }
+}

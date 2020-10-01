@@ -1,0 +1,11 @@
+// Breadcrumbs
+//
+
+.breadcrumb-item,
+.breadcrumb-item a {
+  color: $breadcrumb-color;
+
+  @include hover {
+    color: $breadcrumb-active-color;
+  }
+}

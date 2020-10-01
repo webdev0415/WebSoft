@@ -1,0 +1,31 @@
+
+Ezt latom ha nem vagyok belogolva az MT4talk-ba (view-source:https://mt4talk.com/)
+
+
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+	Paddle.Setup({
+		vendor: 29759
+	});
+</script>
+
+
+Es ezt ha bevagyok logolva. (view-source:https://mt4talk.com/)
+
+<script>
+  $(".paddle_button").map(function(index, el) {
+    var passthrough;
+    if (typeof el.dataset.topicid !== "undefined") {
+      passthrough = "2," + el.dataset.topicid;
+    } else {
+      passthrough = "2";
+    }
+    el.dataset.passthrough = passthrough;
+  })
+  $(".paddle_button").attr("data-email","mt4talk@gmail.com");
+  </script><script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+	Paddle.Setup({
+		vendor: 29759
+	});
+</script>

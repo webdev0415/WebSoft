@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery bTabs Plugin Example</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/darkly/bootstrap.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="b.tabs.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/Bootstrap-iFrame-Tabs-jQuery-bTabs/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container" style="margin:150px auto;">
+<h1>jQuery bTabs Plugin Example</h1>
+<div class="col-md-2" style="padding-left: 0px;">
+				<div class="well menuSideBar" style="padding: 8px 0px;">
+					<ul class="nav nav-list" id="menuSideBar">
+      <li class="nav-header text-center">Nav</li>
+      <li class="nav-divider"></li>
+      <li mid="tab1" funurl="http://www.jqueryscript.net"><a tabindex="-1" href="javascript:void(0);">jQueryScript</a></li>
+      <li mid="tab2" funurl="http://www.cssscript.com"><a tabindex="-1" href="javascript:void(0);">CSSScript</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-10" id="mainFrameTabs" style="padding : 0px;">
+			
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active noclose noSort"><a href="#bTabs_navTabsMainPage" data-toggle="tab">Home</a></li>
+				</ul>
+				
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="bTabs_navTabsMainPage">
+						<div class="page-header">
+							<h2 style="font-size: 31.5px;text-align: center;font-weight: normal;">Welcome</h2>
+						</div>
+						<div style="text-align: center;font-size: 20px;line-height: 20px;">
+						Welcome to use bTabs plugin!
+						</div>
+					</div>
+				</div>
+			
+			</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="b.tabs.js"></script>
+<script>
+$(function(){
+	var calcHeight = function(){
+		$('#mainFrameTabs').height(400);
+	};
+	$('a',$('#menuSideBar')).on('click', function(e) {
+		e.stopPropagation();
+		var li = $(this).closest('li');
+		var menuId = $(li).attr('mid');
+		var url = $(li).attr('funurl');
+		var title = $(this).text();
+		$('#mainFrameTabs').bTabsAdd(menuId,title,url);
+	});
+	
+	$('#mainFrameTabs').bTabs({
+		resize : calcHeight
+	});
+});
+</script>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

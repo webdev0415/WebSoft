@@ -1,0 +1,60 @@
+// Input groups
+//
+
+.input-group .custom-select {
+  flex: 0 1 auto;
+  width: auto;
+}
+
+.input-group-text {
+  background-clip: padding-box;
+}
+
+// *******************************************************************************
+// * Material
+
+@if $material-style {
+  .input-group-text {
+    border-bottom-width: 1px;
+  }
+
+  .input-group-text + .input-group-text {
+    padding-left: 0;
+  }
+
+  .input-group-prepend .input-group-text:first-child {
+    padding-left: 0;
+  }
+
+  .input-group-prepend .input-group-text:last-child {
+      padding-right: 0;
+  }
+
+  .input-group-append .input-group-text:last-child {
+      padding-right: 0;
+  }
+
+  .input-group-append .input-group-text:first-child {
+      padding-left: 0;
+  }
+
+  .input-group > .form-control:first-child,
+  .input-group > .custom-select:first-child,
+  .input-group > .form-control + .form-control,
+  .input-group > .form-control + .custom-select,
+  .input-group > .custom-select + .form-control,
+  .input-group > .custom-select + .custom-select {
+    &:not([class*='px-']):not([class*='pl-']) {
+        padding-left: 0;
+    }
+  }
+
+  .input-group > .form-control:last-child:not([class*='px-']):not([class*='pr-']) {
+    padding-right: 0;
+  }
+
+  .input-group > .custom-select:last-child:not([class*='px-']):not([class*='pr-']) {
+      padding-right: $custom-select-padding-x !important;
+      background-position: right center !important;
+  }
+}

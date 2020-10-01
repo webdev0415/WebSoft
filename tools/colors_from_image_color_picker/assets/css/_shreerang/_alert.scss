@@ -1,0 +1,9 @@
+// Alerts
+//
+
+@each $color, $value in $theme-colors {
+  @if $color != primary and $color != light {
+    @include Codedthemes-alert-variant('.alert-#{$color}', $value);
+    @include Codedthemes-alert-dark-variant('.alert-dark-#{$color}', $value);
+  }
+}

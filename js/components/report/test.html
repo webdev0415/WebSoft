@@ -1,0 +1,60 @@
+<html>
+    <canvas id="canvas2" style="border: black solid 1px;" width="480" height="300"  tabindex='1'></canvas>
+    <script>
+    var canvas2 = document.getElementById("canvas2")
+    var ctx2 = canvas2.getContext("2d")
+    var mouseX = 0;
+    var mouseY = 0;
+    var startingX = 0;
+
+    var recentWords = []
+    var undoList = []
+
+    function saveState(){
+        undoList.push(canvas2.toDataURL())
+    }
+
+    saveState()
+
+    function undo(){
+        undoList.pop()
+        var imgData = undoList[undoList.length - 1]
+        var image = new Image()
+        image.src = imgData
+        image.onload = function () {
+            ctx2.clearRect(0,0,canvas2.width, canvas2.height)
+            ctx2.drawImage(image,0,0,canvas2.width,canvas2.height,0,0,canvas2.width,canvas2.height)
+        }
+    }
+    
+    canvas2.addEventListener("click", function(e){
+        console.log("click")
+        var rect = canvas2.getBoundingClientRect();
+        mouseX = e.clientX - rect.left;
+        mouseY = e.clientY - rect.top;
+        console.log(mouseX)
+        console.log(mouseY)
+        startingX = mouseX
+
+        return false
+    },false)
+
+    canvas2.addEventListener("keydown", function(e){
+        console.log("keydown")
+        ctx2.font = "12px Arial"
+
+        if(e.keyCode === 8){
+            undo()
+            var recentWord = recentWords[recentWords.length-1]
+            mouseX -= ctx2.measureText(recentWord).width
+            recentWords.pop()
+        }else if(e.keyCode === 13){
+            mouseX = startingX
+            mouseY += 20
+        }else{
+        ctx2.fillText(e.key, mouseX, mouseY)
+        mouseX+=ctx2.measureText(e.key).width
+    }
+    },false)
+    </script>
+</html>

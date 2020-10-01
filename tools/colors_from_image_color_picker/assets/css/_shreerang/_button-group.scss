@@ -1,0 +1,64 @@
+// Button groups
+//
+@if not $material-style {
+    :not(.btn-group) > .btn-group > .btn:not(.btn-default):not([class*="btn-outline-"]):first-child,
+    .btn-group > .btn-group:first-child > .btn:not(.btn-default):not([class*="btn-outline-"]):first-child,
+    .input-group-prepend > .btn:not(.btn-default):not([class*="btn-outline-"]):first-child,
+    .input-group-append > .btn:not(.btn-default):not([class*="btn-outline-"]):first-child {
+        border-left-color: transparent !important;
+    }
+
+    :not(.btn-group) > .btn-group > .btn:not(.btn-default):not([class*="btn-outline-"]):last-child,
+    .btn-group > .btn-group:last-child > .btn:not(.btn-default):not([class*="btn-outline-"]):last-child,
+    :not(.btn-group) > .btn-group > .dropdown-toggle:not(.btn-default):not([class*="btn-outline-"]),
+    .btn-group > .btn-group:last-child > .dropdown-toggle:not(.btn-default):not([class*="btn-outline-"]),
+    .input-group-prepend > .btn:not(.btn-default):not([class*="btn-outline-"]):last-child,
+    .input-group-append > .btn:not(.btn-default):not([class*="btn-outline-"]):last-child,
+    .input-group-prepend > .dropdown-toggle:not(.btn-default):not([class*="btn-outline-"]),
+    .input-group-append > .dropdown-toggle:not(.btn-default):not([class*="btn-outline-"]) {
+        border-right-color: transparent !important;
+    }
+}
+// *******************************************************************************
+// * Sizing
+
+.btn-group-xs > .btn {
+    @extend .btn-xs;
+}
+
+.btn-group-sm > .btn {
+    font-size: $input-btn-font-size-sm;
+}
+
+.btn-group-lg > .btn {
+    font-size: $input-btn-font-size-lg;
+}
+
+.btn-group-xl > .btn {
+    @extend .btn-xl;
+}
+// *******************************************************************************
+// * Split button
+
+.btn-group-lg > .btn + .dropdown-toggle-split,
+.btn-group-xl > .btn + .dropdown-toggle-split,
+.btn-lg + .dropdown-toggle-split,
+.btn-xl + .dropdown-toggle-split,
+.dropdown-toggle-split,
+.input-group-lg .btn + .dropdown-toggle-split {
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+}
+
+.btn-group-sm > .btn + .dropdown-toggle-split,
+.btn-sm + .dropdown-toggle-split,
+.input-group-sm .btn + .dropdown-toggle-split {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+}
+
+.btn-group-xs > .btn + .dropdown-toggle-split,
+.btn-xs + .dropdown-toggle-split {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}

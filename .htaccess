@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.websoft365.com 
+RewriteRule (.*) https://websoft365.com/$1 [R=301,L]

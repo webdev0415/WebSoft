@@ -1,0 +1,638 @@
+@import '_shreerang/include-material';
+@import '_shreerang/reboot';
+@import '_shreerang/type';
+@import '_shreerang/utilities';
+@import '_shreerang/base';
+@import '_shreerang/tables';
+@import '_shreerang/buttons';
+@import '_shreerang/button-group';
+@import '_shreerang/badge';
+@import '_shreerang/dropdown';
+@import '_shreerang/nav';
+@import '_shreerang/pagination';
+@import '_shreerang/alert';
+@import '_shreerang/tooltip';
+@import '_shreerang/popover';
+@import '_shreerang/forms';
+@import '_shreerang/custom-forms';
+@import '_shreerang/switcher';
+@import '_shreerang/input-group';
+@import '_shreerang/modal';
+@import '_shreerang/breadcrumb';
+@import '_shreerang/list-group';
+@import '_shreerang/navbar';
+@import '_shreerang/card';
+@import '_shreerang/accordion';
+@import '_shreerang/carousel';
+@import '_shreerang/close';
+@import '_shreerang/footer';
+@import '_shreerang/sidenav';
+@import '_shreerang/layout';
+@import '_shreerang/app-brand'; //===========   for theme
+@import "./_theme/common";
+@import "./_theme/libs";
+@import "./_theme/uikit";
+$primary-color: #ff4a00;
+// $primary-color: #55a3f4;
+$body-bg: #f0f4f5;
+
+body {
+    background: $body-bg;
+}
+
+a {
+    color: $primary-color;
+
+    &:hover {
+        color: darken($primary-color, 15%);
+    }
+}
+@include Codedthemes-common-material-theme($primary-color);
+@include Codedthemes-libs-material-theme($primary-color);
+@include Codedthemes-uikit-theme($primary-color); // Navbar
+@include Codedthemes-navbar-variant('.bg-navbar-theme', $primary-color);
+
+.navbar {
+    box-shadow: 1px 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.material-style .sidenav .app-brand.demo {
+    height: 70px;
+}
+// Sidenav
+@include Codedthemes-sidenav-variant('.bg-sidenav-theme', #fff, $color: #222, $active-color: $body-color, $menu-bg: darken($body-bg, 2.5%));
+
+.sidenav.sidenav-vertical.bg-white {
+    .sidenav-inner > .sidenav-item.active > .sidenav-link{
+        color: $primary-color !important;
+
+    }
+
+    .sidenav-item.active > .sidenav-link:not(.sidenav-toggle) {
+        background: $body-bg;
+    }
+}
+.sidenav.sidenav-vertical.bg-dark {
+    .sidenav-inner > .sidenav-item.active > .sidenav-link{
+        color: #fff !important;
+
+    }
+
+    .sidenav-item.active > .sidenav-link:not(.sidenav-toggle) {
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
+
+.layout-sidenav,
+.layout-sidenav-horizontal {
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.08);
+}
+// Footer
+@include Codedthemes-footer-variant('.bg-footer-theme', $body-bg, $color: $text-muted, $active-color: $body-color);
+
+.layout-footer {
+    box-shadow: 0 -1px 0 rgba($black, 0.04);
+}
+// Custom styling
+
+hr {
+    border-color: rgba($black, 0.04);
+}
+
+.nav-tabs-bottom > .tab-content,
+.nav-tabs-left > .tab-content,
+.nav-tabs-right > .tab-content,
+.nav-tabs-top > .tab-content {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.form-wizard-boxed-steps .wizard-nav,
+.ng2-archwizard-boxed-steps ul.steps-indicator {
+    border-color: transparent !important;
+    box-shadow: $card-shadow;
+}
+
+.nav-tabs-bottom,
+.nav-tabs-left,
+.nav-tabs-right,
+.nav-tabs-top {
+    > .nav-tabs:not(.tabs-alt) .nav-link:not(.active),
+    > div > .nav-tabs:not(.tabs-alt) .nav-link:not(.active) {
+        border-color: transparent !important;
+    }
+
+    > .nav .nav-link.active,
+    > div > .nav .nav-link.active {
+        border-color: $nav-tabs-link-active-bg !important;
+    }
+}
+
+.nav-tabs-bottom > .nav-tabs:not(.tabs-alt),
+.nav-tabs-bottom > div > .nav-tabs:not(.tabs-alt),
+.nav-tabs-top > .nav-tabs:not(.tabs-alt),
+.nav-tabs-top > div > .nav-tabs:not(.tabs-alt) {
+    padding-right: $border-width;
+    padding-left: $border-width;
+}
+
+.nav-tabs-left > .nav-tabs:not(.tabs-alt),
+.nav-tabs-left > div > .nav-tabs:not(.tabs-alt),
+.nav-tabs-right > .nav-tabs:not(.tabs-alt),
+.nav-tabs-right > div > .nav-tabs:not(.tabs-alt) {
+    padding-top: $border-width;
+    padding-bottom: $border-width;
+}
+
+.progress {
+    background: $body-bg;
+}
+
+.sortable-example {
+    li {
+        background: $body-bg;
+    }
+}
+@each $color, $value in $theme-colors {
+    @include button-glow-variant('.btn-glow-#{$color}', $value);
+}
+@each $color, $value in $theme-colors {
+    .chart-shadow-#{$color} {
+        // filter: drop-shadow(0 8px 8px $value);
+    }
+}
+// ====================  material color
+// *******************************************************************************
+// * Custom colors
+$custom-colors: (
+    twitter: #1DA1F2,
+    google: #D1523F,
+    facebook: #3B5998,
+    pinterest: #bd121c,
+    instagram: #000,
+    windows: #26AAE1,
+    macos: #343434,
+    linux: #800080
+)
+!default;
+@each $color-name, $color-value in $custom-colors {
+    @include text-emphasis-variant('.text-#{$color-name}', $color-value);
+    @include bg-variant('.bg-#{$color-name}', $color-value);
+    @include Codedthemes-material-button-variant('.btn-#{$color-name}', $color-value);
+    @include Codedthemes-material-button-outline-variant('.btn-outline-#{$color-name}', $color-value);
+}
+// *******************************************************************************
+// * Buttons
+@include Codedthemes-material-button-variant('.btn-white', #fff, $body-color);
+@include Codedthemes-material-button-outline-variant('.btn-outline-white', #fff, $body-color); // *******************************************************************************
+// * Custom controls
+$custom-control-colors: (
+    black: #000,
+    white: #fff,
+    silver: #eee,
+    gray: #777,
+    gold: #ffeb3b,
+    pink: #e91e63,
+    red: #f44336
+)
+!default;
+@each $color-name, $color-value in $custom-control-colors {
+    @include Codedthemes-material-custom-control-variant('.custom-control.custom-control-#{$color-name}', $color-value, $default-background: $color-value);
+}
+// *******************************************************************************
+// * Navbar
+@each $color, $value in $theme-colors {
+    @if $color != primary and $color != light and $color != secondary {
+        @include Codedthemes-navbar-variant('.navbar.bg-#{$color}', $value);
+    }
+}
+@include Codedthemes-navbar-variant('.navbar.bg-white', #fff, $body-color,$active-color: $body-color,);
+
+.navbar {
+    &[class*="bg-"] {
+        .app-brand-logo img {
+            filter:brightness(4);
+        }
+
+        .form-control {
+            &::-moz-placeholder {
+                color: rgba(255, 255, 255, 0.9);
+                opacity: 1;
+            }
+
+            &:-ms-input-placeholder {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            &::-webkit-input-placeholder {
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
+
+    &.bg-white {
+        .app-brand-logo img {
+            filter:brightness(1);
+        }
+    }
+}
+// *******************************************************************************
+// * Sidenav
+@each $color, $value in $theme-colors {
+    @if $color != 'primary' and $color != 'light' and $color != 'danger' and $color != 'warning' and $color != 'info' and $color != 'success' and $color != 'secondary' {
+        @include Codedthemes-sidenav-variant('.sidenav.bg-#{$color}', $value);
+    }
+}
+@include Codedthemes-sidenav-variant('.sidenav.bg-white', #fff, $body-color, $body-color);
+
+.sidenav.bg-dark {
+    background: #606c72;
+}
+
+.sidenav{
+    .app-brand {
+        height: 70px;
+    }
+    &.bg-white {
+
+    }
+    &.logo-white{
+        .app-brand-logo img {
+            filter:contrast(0);
+        }
+        .app-brand {
+            height: 70px;
+            background: #fff;
+            .sidenav-link,
+            .sidenav-text {
+                color: #606c72;
+            }
+        }
+    }
+    &.logo-dark{
+        .app-brand-logo img {
+            // filter:contrast(0);
+        }
+        .app-brand {
+            height: 70px;
+            background: #606c72;
+            .sidenav-link,
+            .sidenav-text {
+                color: #fff;
+            }
+        }
+    }
+}
+// *******************************************************************************
+// * Footer
+@each $color, $value in $theme-colors {
+    @if $color != 'primary' and $color != 'light' and $color != 'danger' and $color != 'warning' and $color != 'info' and $color != 'success' and $color != 'secondary' {
+        @include Codedthemes-footer-variant('.footer.bg-#{$color}', $value);
+    }
+}
+@include Codedthemes-footer-variant('.footer.bg-white', #fff, $body-color);
+@media (max-width:480px) {
+    .layout-footer {
+        .d-flex > .pt-3 {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+}
+
+.demo-vertical-spacing > * + * {
+    margin-top: 1.875rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-sm > * + * {
+    margin-top: 0.9375rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * + * {
+    margin-top: 5rem !important;
+    margin-bottom: 0 !important;
+}
+
+.demo-inline-spacing > *,
+.demo-paragraph-spacing > p > * {
+    margin: 0 0.375rem 0.9375rem 0 !important;
+}
+
+.demo-paragraph-spacing > p {
+    margin: 0;
+}
+
+.demo-blocks > * {
+    display: block !important;
+}
+
+.demo-navbar-messages .dropdown-toggle,
+.demo-navbar-messages.b-nav-dropdown .nav-link,
+.demo-navbar-notifications .dropdown-toggle,
+.demo-navbar-notifications.b-nav-dropdown .nav-link,
+.demo-navbar-user .dropdown-toggle,
+.demo-navbar-user.b-nav-dropdown .nav-link {
+    white-space: nowrap;
+}
+
+.demo-navbar-messages .dropdown-menu,
+.demo-navbar-notifications .dropdown-menu {
+    overflow: hidden;
+    padding: 0;
+}
+@media (min-width: 992px) {
+    .demo-navbar-messages .dropdown-menu,
+    .demo-navbar-notifications .dropdown-menu {
+        margin-top: 0.5rem;
+        width: 22rem;
+    }
+
+    .demo-navbar-user .dropdown-menu {
+        margin-top: 0.25rem;
+    }
+}
+
+.demo-navbar-notifications {
+    > a {
+        animation: ring 1.5s infinite linear;
+        @media screen and (max-width: 992px) {
+            animation: unset;
+        }
+    }
+}
+
+.navbar-nav .badge-dot {
+    opacity: 0;
+    animation: hblink 1.5s infinite linear;
+}
+@keyframes hblink {
+    0% {
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 1;
+    }
+
+    7% {
+        opacity: 1;
+    }
+
+    10.25% {
+        opacity: 0;
+    }
+
+    90.75% {
+        opacity: 0;
+    }
+
+    93% {
+        opacity: 1;
+    }
+
+    97% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    6.25% {
+        transform: rotate(-2deg);
+    }
+
+    12.5% {
+        transform: rotate(5deg);
+    }
+
+    18.75% {
+        transform: rotate(-10deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    31.25% {
+        transform: rotate(-20deg);
+    }
+
+    37.5% {
+        transform: rotate(25deg);
+    }
+
+    43.75% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+
+    56.25% {
+        transform: rotate(-30deg);
+    }
+
+    62.5% {
+        transform: rotate(25deg);
+    }
+
+    68.75% {
+        transform: rotate(-20deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+
+    81.25% {
+        transform: rotate(-10deg);
+    }
+
+    87.5% {
+        transform: rotate(5deg);
+    }
+
+    93.75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+$style-block-width: 310px;
+
+.ui-builder {
+    z-index: 1029;
+    position: relative;
+
+    .style-toggler {
+        > a {
+            position: fixed;
+            right: 0;
+            top: 120px;
+            transition: 0.3s ease-in-out;
+
+            &:before {
+                content: "";
+                top: 0;
+                right: 0;
+                position: absolute;
+                width: 45px;
+                height: 44px;
+                font-family: "pct";
+                z-index: 1001;
+                line-height: 0;
+                background: $primary-color;
+                border-radius: 25px 0 0 25px;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:after {
+                content: "\e810";
+                top: 10px;
+                right: 10px;
+                font-size: 23px;
+                position: absolute;
+                font-family: 'Linearicons-Free';
+                z-index: 1029;
+                line-height: 1;
+                color: #fff;
+                transition: 0.3s ease-in-out;
+                animation: cir 1.5s linear infinite;
+            }
+        }
+    }
+
+    &.open {
+        .style-toggler {
+            > a {
+                right: $style-block-width;
+
+                &:after {
+                    content: "\e870";
+                    animation: anim-rotate 0s linear infinite;
+                }
+            }
+        }
+
+        .ui-block {
+            right: 0;
+            box-shadow: 0 0 0 1px rgba(24, 28, 33, 0.08);
+        }
+    }
+
+    .ui-block {
+        position: fixed;
+        top: 120px;
+        right: -#{$style-block-width};
+        width: $style-block-width;
+        background: #fff;
+        z-index: 1030;
+        transition: 0.3s ease-in-out;
+        border-radius: 0 0 0 0.125rem;
+
+        .style-head {
+            background: $primary-color;
+            color: #fff;
+            padding: 13.7px 30px;
+        }
+
+        .style-body {
+            padding: 30px;
+        }
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .layout {
+        display: block;
+
+        > a {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-right: 10px;
+            background: #f2f3f8;
+            overflow: hidden;
+            border-radius: 125rem;
+            box-shadow: 0 0 0 1px rgba(24, 28, 33, 0.08);
+
+            &.active {
+                border-color: $primary-color;
+            }
+        }
+        &.header-color {
+            @each $color, $value in $theme-colors {
+                @if $color != light and $color != secondary {
+                    > a {
+                        &[data-val="bg-#{$color}"] {
+                            background: $value;
+                        }
+                    }
+                }
+            }
+
+            > a {
+                &[data-val="bg-white"] {
+                    background: #fff;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+}
+@keyframes cir {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-badges {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    transform: rotate(45deg);
+    width: 120px;
+    text-align: center;
+
+    &.left {
+        transform: rotate(-45deg);
+        right: auto;
+        left: -30px;
+    }
+}
+
+.layout-1 .layout-sidenav .app-brand.demo,
+.layout-1 .layout-sidenav .app-brand.demo + .sidenav-divider,
+.layout-reversed .layout-2 .layout-sidenav .app-brand.demo {
+    display: none;
+}
+
+.layout-1 .layout-navbar .app-brand.demo,
+.layout-reversed .layout-2 .layout-navbar .app-brand.demo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.layout-1 .layout-navbar .layout-sidenav-toggle,
+.layout-fixed-offcanvas .layout-navbar .layout-sidenav-toggle,
+.layout-offcanvas .layout-navbar .layout-sidenav-toggle,
+.layout-reversed .layout-2 .layout-navbar .layout-sidenav-toggle {
+    display: block !important;
+}

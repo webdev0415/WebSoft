@@ -1,0 +1,226 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+html {
+    font-size: 16px;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    
+}
+#blockText {
+    display: block;
+}
+.emoji-wysiwyg-editor {
+    display: block;
+}
+.emoji-menu {
+    width: 280px;
+}
+.emoji-items-wrap {
+    height: 220px;
+}
+/* Set gray background color and 100% height */
+
+.sidenav {
+    padding-top: 10px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.canvas-container {
+    overflow: hidden;
+    height: inherit;
+}
+
+.panel-body>.input-group {
+    margin-bottom: 10px;
+}
+
+.panel-body>.input-group>label {
+    min-width: 80px;
+}
+
+.panel-body>.input-group>span {
+    min-width: 50px;
+}
+.dropdown-item {
+    display: block;
+    padding: 1rem;
+}
+.dropdown-item:hover {
+    text-decoration: none;
+}
+#canvas-background {
+    background-color: #f7f7f7;
+    width: 97%;
+    height: 97%;
+    text-align: center;
+    overflow: hidden;
+    -webkit-flex: 1;
+    border: 1px #aaa solid;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5) inset;
+}
+#change_file_name{
+  display:none;
+  margin-left:30px!important;
+}
+#canvas-background {
+    margin: 50px auto 0 auto;
+    
+    position: absolute;
+}
+#sliderCanvasZoom {
+    margin-top: 10px;
+}
+div.image {
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#sliderTextRotate {
+    padding: 0;
+    height: .8em !important;
+}
+
+.ui-resizable {
+    border: 1px dotted gray;
+}
+
+.ui-resizable-nw {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    right: 1px;
+    bottom: 1px;
+    background-position: -32px -192px;
+    background-image: url("images/ui-icons_444444_256x240.png");
+}
+
+.no-border {
+    border: none;
+}
+
+
+/* Photo Basket */
+
+.photo-gallery {
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.photo-pictures {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.photo-pictures>li {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 -1px -1px 0;
+    border: 4px solid transparent;
+    overflow: hidden;
+}
+
+.photo-pictures>li>img {
+    cursor: -webkit-zoom-in;
+    cursor: pointer;
+    width: 100%;
+    max-width: 160px;
+    vertical-align: middle;
+    border: #000 solid 1px;
+}
+
+.span-close-picture {
+    cursor: pointer;
+    float: right;
+}
+
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 10px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+.container {
+    width: 100%!important;
+}
+
+
+/*#sidebar-wrapper {
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}*/
+
+.websoft_icon_link{
+    padding-top: 14px!important;
+}
+.mobile_alert {
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+  .wrapcontain {
+    display: none;
+  }
+  .mobile_alert {
+    display: block;
+}
+}
